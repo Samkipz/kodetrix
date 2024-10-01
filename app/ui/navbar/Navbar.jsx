@@ -20,6 +20,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
       <span>
+        <Link href="/"> {/* to make the logo clickable and redirect to the home page  */}
         <Image
           src="/logo.png"
           alt="Logo"
@@ -27,10 +28,11 @@ export default function Navbar() {
           height={50}
           className="h-auto w-auto" // Ensures the image retains its aspect ratio
         />
+        </Link>
       </span>
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link
-          href="/"
+          href="#hero"
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
@@ -50,7 +52,7 @@ export default function Navbar() {
           ></span>
         </Link>
         <Link
-          href="/about"
+          href="#about"
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
@@ -70,7 +72,7 @@ export default function Navbar() {
           ></span>
         </Link>
         <Link
-          href="/services"
+          href="#services"
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
@@ -90,7 +92,7 @@ export default function Navbar() {
           ></span>
         </Link>
         <Link
-          href="/contact"
+          href="#contact"
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
@@ -123,29 +125,29 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="flex flex-col border-2 border-red-700 justify-between"
+          className="flex flex-col border-2  justify-between"
         >
           <nav className="grid gap-6 text-lg font-medium">
             <Link
-              href="#"
+              href="/"
               className="text-muted-foreground hover:text-foreground"
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="#about"
               className="text-muted-foreground hover:text-foreground"
             >
               About
             </Link>
             <Link
-              href="#"
+              href="#services"
               className="text-muted-foreground hover:text-foreground"
             >
               Services
             </Link>
             <Link
-              href="#"
+              href="#contact"
               className="text-muted-foreground hover:text-foreground"
             >
               Contact
