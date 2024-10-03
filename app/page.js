@@ -13,18 +13,21 @@ export default function Home() {
       <div className="flex min-h-dvh">
         <HeroSection />
       </div>
-      <div className="flex min-h-screen bg-primary">
-        <About/>
-      </div>
-      {/* <div className="flex min-h-screen bg-primary-foreground">
-        <Services />
-      </div> */}
-      <div className="flex min-h-screen bg-primary">
-        <Contact/>
-      </div>
-      <div className="flex min-h-screen bg-primary-foreground">
-        <Footer/>
-      </div>
+
+      <main className="flex flex-col w-full bg-primary-foreground">
+          <div className="flex flex-col  ">
+            <About/>
+          </div>
+          {/* <div className="flex flex flex-col">
+            <Services />
+          </div> */}
+          <div className="flex flex-col ">
+            <Contact/>
+          </div>
+          <div className="flex  ">
+            <Footer/>
+          </div>
+      </main>
     </div>
   );
 }

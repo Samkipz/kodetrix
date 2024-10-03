@@ -6,31 +6,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-end bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
-      <div className="mt-16 flex w-full flex-col lg:gap-8">
-        <div className="flex flex-col w-full items-center justify-center text-center py-8">
-          <h2 className="text-2xl font-bold">Join our newsletter.</h2>
-          <p className="mt-4 text-muted-foreground">
-            Get the latest products, offers and new services right in your
-            inbox.
-          </p>
-          <div className="mt-4 mx-auto max-w-xl relative w-full">
-            {/* Form */}
-            <form className="flex items-center justify-center text-center w-full">
-              <div className="flex flex-shrink flex-nowrap w-full items-center">
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  className="rounded-r-none"
-                />
-                <Button type="submit" className="rounded-l-none">
-                  Subscribe
-                </Button>
-              </div>
-            </form>
-            {/* End Form */}
-          </div>
-        </div>
+    <footer className="flex flex-col  justify-end bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
+      <div className="mt-4 flex w-full flex-col lg:gap-8">
+     
 
         <div className="mt-16 pt-8 grid gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16 ">
           <div className="col-span-2 sm:col-span-1">
@@ -38,43 +16,43 @@ export default function Footer() {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   1on1 Coaching{" "}
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   Company Review{" "}
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   Accounts Review{" "}
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   HR Consulting{" "}
-                </Link>
+                </Link> */}
               </li>
 
               <li>
@@ -140,23 +118,23 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   FAQs{" "}
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   {" "}
                   Live Chat{" "}
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
@@ -166,12 +144,12 @@ export default function Footer() {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <Link
+                {/* <Link
                   href="#"
                   className="text-muted-foreground transition hover:opacity-75"
                 >
                   Accessibility
-                </Link>
+                </Link> */}
               </li>
 
               <li>
@@ -203,7 +181,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-2 sm:col-span-1">
+          {/* <div className="col-span-2 sm:col-span-1">
             <p className="font-medium">Downloads</p>
 
             <ul className="mt-6 space-y-4 text-sm">
@@ -227,7 +205,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
             <li>
@@ -298,7 +276,7 @@ export default function Footer() {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 href="#"
                 rel="noreferrer"
@@ -320,9 +298,9 @@ export default function Footer() {
                   />
                 </svg>
               </Link>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <Link
                 href="#"
                 rel="noreferrer"
@@ -344,18 +322,21 @@ export default function Footer() {
                   />
                 </svg>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
 
-      <div className="flex flex-col border-t border-gray-100 w-full">
-        <div className="sm:flex sm:justify-between">
+      <div className="flex flex-col border-t border-gray-400 w-full dark:border-gray-200">
+        <div className="sm:flex sm:justify-between ">
           <p className="text-xs text-mute-foreground">
-            &copy; 2022. Company Name. All rights reserved.
+            <p className="text-xs text-mute-foreground">
+              &copy; {new Date().getFullYear()}. Kodetrix Ventures. All rights
+              reserved.
+            </p>
           </p>
 
-          <ul className="flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end ">
+          <ul className="flex flex-wrap justify-center gap-4 text-xs sm:mt-0 lg:justify-end ">
             <li>
               <Link
                 href="#"
