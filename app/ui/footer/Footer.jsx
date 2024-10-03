@@ -329,12 +329,12 @@ export default function Footer() {
 
       <div className="flex flex-col border-t border-gray-400 w-full dark:border-gray-200">
         <div className="sm:flex sm:justify-between ">
-          <p className="text-xs text-mute-foreground">
+          
             <p className="text-xs text-mute-foreground">
               &copy; {new Date().getFullYear()}. Kodetrix Ventures. All rights
               reserved.
             </p>
-          </p>
+          
 
           <ul className="flex flex-wrap justify-center gap-4 text-xs sm:mt-0 lg:justify-end ">
             <li>
