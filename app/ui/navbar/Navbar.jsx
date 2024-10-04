@@ -6,6 +6,7 @@ import {
   SheetTrigger,
   SheetContent,
   SheetHeader,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -18,16 +19,17 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky z-30 top-0 flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
-      <span>
-        <Link href="/"> {/* to make the logo clickable and redirect to the home page  */}
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={140} // Adjust the width and height based on your design needs
-          height={50}
-          className="h-auto w-auto" // Ensures the image retains its aspect ratio
-        />
+    <header className="sticky z-30 top-0 min-h-[10vh] flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
+      <span >
+        <Link href="/">
+          {/* to make the logo clickable and redirect to the home page  */}
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={140} // Adjust the width and height based on your design needs
+            height={50}
+            className="h-auto w-auto" // Ensures the image retains its aspect ratio
+          />
         </Link>
       </span>
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
@@ -111,7 +113,7 @@ export default function Navbar() {
             )}
           ></span>
         </Link>
-        
+
         <span className="text-muted-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2">
           <ModeToggle />
         </span>
@@ -128,30 +130,38 @@ export default function Navbar() {
           className="flex flex-col border-2  justify-between"
         >
           <nav className="grid gap-6 text-lg font-medium">
-            <Link
-              href="/"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Home
-            </Link>
-            <Link
-              href="#about"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              About
-            </Link>
-            <Link
-              href="#services"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Services
-            </Link>
-            <Link
-              href="#contact"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              Contact
-            </Link>
+            <SheetClose asChild>
+              <Link
+                href="/"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Home
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link
+                href="#about"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                About
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link
+                href="#services"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Services
+              </Link>
+            </SheetClose>
+            <SheetClose asChild>
+              <Link
+                href="#contact"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Contact
+              </Link>
+            </SheetClose>
           </nav>
           <span className="sticky bottom-0 text-muted-foreground transition-colors hover:text-foreground">
             <ModeToggle />
