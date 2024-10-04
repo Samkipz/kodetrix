@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <Navbar />
-      <div className="flex min-h-screen">
+      <div className="flex min-h-dvh">
         <HeroSection />
       </div>
       <div className="flex min-h-screen bg-primary">
