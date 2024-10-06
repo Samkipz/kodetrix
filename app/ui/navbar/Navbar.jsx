@@ -14,13 +14,40 @@ import React from "react";
 import { ModeToggle } from "../modeToggle/ModeToggle";
 import Image from "next/image";
 import { clsx } from "clsx";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const [hash, setHash] = useState("");
+
+  // Update hash on window hash change
+  useEffect(() => {
+    const handleHashChange = () => {
+      setHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Set the initial hash when component mounts
+    setHash(window.location.hash);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+
+  const handleScroll = (id) => {
+    console.log("hash -- ", hash);
+    setHash(id);
+    console.log("scrolling to", id);
+  };
+
   const pathname = usePathname();
+  // console.log("---", window.location);
 
   return (
     <header className="sticky z-30 top-0 min-h-[10vh] flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
-      <span >
+      <span>
         <Link href="/">
           {/* to make the logo clickable and redirect to the home page  */}
           <Image
@@ -38,17 +65,18 @@ export default function Navbar() {
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
-              "text-primary": pathname === "/", // Apply the same text color as hover for active path
+              "text-primary": hash === "#hero", // Apply the same text color as hover for active path
             }
           )}
+          onClick={() => handleScroll("#hero")}
         >
           Home
           <span
             className={clsx(
               "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
               {
-                "scale-x-125": pathname === "/", // Apply the hover-like scaling effect for the active path
-                "scale-x-0 group-hover:scale-x-125": pathname !== "/", // Only scale on hover for non-active paths
+                "scale-x-125": hash === "#hero", // Apply the hover-like scaling effect for the active path
+                "scale-x-0 group-hover:scale-x-125": hash !== "#hero", // Only scale on hover for non-active paths
               }
             )}
           ></span>
@@ -58,17 +86,18 @@ export default function Navbar() {
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
-              "text-primary": pathname === "/about", // Apply the same text color as hover for active path
+              "text-primary": hash === "#about", // Apply the same text color as hover for active path
             }
           )}
+          onClick={() => handleScroll("#about")}
         >
           About
           <span
             className={clsx(
               "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
               {
-                "scale-x-125": pathname === "/about", // Apply the hover-like scaling effect for the active path
-                "scale-x-0 group-hover:scale-x-125": pathname !== "/about", // Only scale on hover for non-active paths
+                "scale-x-125": hash === "#about", // Apply the hover-like scaling effect for the active path
+                "scale-x-0 group-hover:scale-x-125": hash !== "#about", // Only scale on hover for non-active paths
               }
             )}
           ></span>
@@ -78,21 +107,23 @@ export default function Navbar() {
           className={clsx(
             "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
             {
-              "text-primary": pathname === "/services", // Apply the same text color as hover for active path
+              "text-primary": hash === "#services", // Apply the same text color as hover for active path
             }
           )}
+          onClick={() => handleScroll("#services")}
         >
           Services
           <span
             className={clsx(
               "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
               {
-                "scale-x-125": pathname === "/services", // Apply the hover-like scaling effect for the active path
-                "scale-x-0 group-hover:scale-x-125": pathname !== "/services", // Only scale on hover for non-active paths
+                "scale-x-125": hash === "#services", // Apply the hover-like scaling effect for the active path
+                "scale-x-0 group-hover:scale-x-125": hash !== "#services", // Only scale on hover for non-active paths
               }
             )}
           ></span>
         </Link>
+
         <Link
           href="#contact"
           className={clsx(
