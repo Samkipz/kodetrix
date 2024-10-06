@@ -2,6 +2,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
+    <>
     <div id="hero"
       className='scroll-mt-20 scroll-smooth w-full h-ful py-24 px-4 md:px-12 sm:px-6 lg:px-8 relative flex flex-col items-start justify-center'
       style={{ 
@@ -17,10 +18,10 @@ export default function HeroSection() {
       </h1>
     </div>
 
-    <div class="mt-5 max-w-3xl text-center mx-auto">
+    {/* <div class=" flex-col mt-5 max-w-3xl text-center mx-auto">
       <p class="text-lg text-gray-600 dark:text-neutral-400">Preline UI is an open-source set of prebuilt UI components, ready-to-use examples and Figma design system based on the utility-first Tailwind CSS framework.</p>
-    </div>
-
+    </div> */}
+{/* 
     <div class="mt-8 gap-3 flex justify-center">
       <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4" href="#">
         Get started
@@ -32,10 +33,9 @@ export default function HeroSection() {
           <svg class="shrink-0 size-4 group-hover:rotate-6 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
         </span>
       </button>
-    </div>
+    </div> */}
     
-
-    <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
+    {/* <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
       <span class="text-sm text-gray-600 dark:text-neutral-400">Package Manager:</span>
       <span class="text-sm font-bold text-gray-900 dark:text-white">npm</span>
       <svg class="size-5 text-gray-300 dark:text-neutral-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -45,9 +45,7 @@ export default function HeroSection() {
         Installation Guide
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </a>
-    </div>
-  </div>
-</div>
-    </div>
+    </div> */}
+    </>
   );
 }
