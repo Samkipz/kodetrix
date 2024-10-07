@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSection />
       </div>
 
-      <main className="flex flex-col w-full bg-primary-foreground">
+      <main className="flex flex-col w-full bg-background">
         <div className="flex flex-col  ">
           <About />
         </div>

@@ -1,13 +1,11 @@
 import React from "react";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" bg-primary flex flex-col  justify-end bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
-      <div className="flex w-full flex-col lg:gap-16 items-center justify-center">
+    <footer className="flex flex-col  justify-end text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
+      <div className="flex w-full flex-col lg:gap-16 items-center justify-center ">
         <div className="flex pt-8 gap-32">
           <div className="col-span-2 sm:col-span-1">
             <p className="font-medium">Services</p>
@@ -30,26 +28,6 @@ export default function Footer() {
                 >
                   {" "}
                   Company Review{" "}
-                </Link> */}
-              </li>
-
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  Accounts Review{" "}
-                </Link> */}
-              </li>
-
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  HR Consulting{" "}
                 </Link> */}
               </li>
 
@@ -103,26 +81,6 @@ export default function Footer() {
                   {" "}
                   Contact{" "}
                 </Link>
-              </li>
-
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  FAQs{" "}
-                </Link> */}
-              </li>
-
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  Live Chat{" "}
-                </Link> */}
               </li>
             </ul>
           </div>
