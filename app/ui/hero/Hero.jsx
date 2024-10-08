@@ -7,12 +7,13 @@ import 'animate.css';
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function HeroSection() {
+  
   return (
     <div 
       id="hero"
       className='gap-y-4 scroll-mt-20 scroll-smooth w-full h-full py-24 px-4 md:px-12 sm:px-6 lg:px-8 relative flex-col md:flex md:flex-row items-start shadow-sm shadow-gray-400'
     >  
-      <section className='md:w-1/2 flex flex-col gap-4 md:shadow-sm  z-10 animate__animated animate__fadeInRight animate__delay-1s'>
+      <section className=' -mr-2 md:w-1/2 flex flex-col gap-4 md:shadow-sm  z-10 animate__animated animate__fadeInRight animate__delay-1s'>
       
           <h1 className=' text-3xl text-foreground font-bold md:text-5xl md:mx-8 shadow-sm'> 
             Welcome to {" "}
@@ -53,8 +54,8 @@ export default function HeroSection() {
         </p>
         <Button className='mt-1 md:mt-20 py-6 md:order-last md:w-1/2'><Link href='#about'>Learn More</Link></Button>
       </section> 
-
-      <section className='md:w-1/2 flex mt-4 md:mt-0 md:shadow-sm animate__animated animate__fadeInDown animate__delay-2s'>
+       
+      <section className='  md:w-1/2 flex mt-4 md:mt-0 md:shadow-sm animate__animated animate__fadeInDown animate__delay-2s'>
         <Image 
           src="/hero.jpeg" 
           alt="hero-image" 
@@ -64,5 +65,5 @@ export default function HeroSection() {
         />
       </section>   
     </div>
-  );
-}
+   );
+ }
