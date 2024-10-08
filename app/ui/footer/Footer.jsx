@@ -40,6 +40,24 @@ export default function Footer() {
                   SEO Optimisation{" "}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-muted-foreground transition hover:opacity-75"
+                >
+                  {" "}
+                  Software Development{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-muted-foreground transition hover:opacity-75"
+                >
+                  {" "}
+                  Network Configuration{" "}
+                </Link>
+              </li>
             </ul>
           </div>
 

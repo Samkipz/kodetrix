@@ -21,28 +21,29 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex justify-center scroll-mt-20 scroll-smooth shadow-sm shadow-gray-400 min-h-screen"
+      className="flex flex-col scroll-mt-20 scroll-smooth shadow-sm shadow-gray-400 min-h-screen"
     >   
+        <h1 className="px-6 flex animate__animated animate__fadeInUp mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
+          Contact Us
+        </h1>
     <>
       {/* Hero */}
       <div className="relative ">
-      <h1 className="flex animate__animated animate__fadeInUp mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
-          Contact Us
-        </h1>
+      
         <div className="container py-24 sm:py-32">
         
           {/* Grid */}
           <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
             <div>
-              <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+              <p className=" mx-3 inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
                 A vision for the future
               </p>
               {/* Title */}
               <div className="mt-4 md:mb-12 max-w-2xl">
-                <h1 className="mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                <h1 className="mb-4 mx-3 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl">
                   Kodetrix Unleashes Your Future in the Sky
                 </h1>
-                <p className="text-xl text-muted-foreground">
+                <p className="mx-2 md:text-xl text-muted-foreground">
                   Experience limitless possibilities with our cutting-edge IT
                   solutions.
                 </p>
@@ -64,7 +65,7 @@ export default function Contact() {
                     fill="currentColor"
                   />
                 </svg>
-                <div className="relative z-10">
+                <div className="mx-3 relative z-10">
                   <p className="text-xl italic">
                   <Typewriter
                     words={["Let us be your very fast and professional partner.", "Leave your details and we will get back to you"]}
@@ -78,7 +79,7 @@ export default function Contact() {
                     
                   </p>
                 </div>
-                <footer className="mt-3">
+                <footer className="mx-3 mt-3">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <img
