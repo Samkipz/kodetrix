@@ -41,7 +41,9 @@ export default function Contact() {
               {/* Title */}
               <div className="mt-4 md:mb-12 max-w-2xl">
                 <h1 className="mb-4 mx-3 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl">
-                  Kodetrix Unleashes Your Future in the Sky
+                <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700'>
+                    Kodetrix
+                  </span> Unleashes Your Future in the Sky
                 </h1>
                 <p className="mx-2 md:text-xl text-muted-foreground">
                   Experience limitless possibilities with our cutting-edge IT
