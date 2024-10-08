@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className="mx-3 relative z-10">
                   <p className="text-xl italic">
                   <Typewriter
-                    words={["Let us be your very fast and professional partner.", "Leave your details and we will get back to you"]}
+                    words={["Let us be your fast and professional partner.", "Leave your details and we will get back to you"]}
                     loop={false}
                     cursor={true}
                     cursorStyle="||"
