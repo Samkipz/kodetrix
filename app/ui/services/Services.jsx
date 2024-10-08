@@ -1,13 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import KeenSlider from 'keen-slider';
+import 'keen-slider/keen-slider.min.css';
 
 export default function Services() {
-  return (
-    <div id='services'>
-    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-    
-    <script type="module">
-      import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-    
+  useEffect(() => {
       const keenSlider = new KeenSlider(
         '#keen-slider',
         {
@@ -28,29 +24,30 @@ export default function Services() {
           },
         },
         []
-      )
+      );
     
-      const keenSliderPrevious = document.getElementById('keen-slider-previous')
-      const keenSliderNext = document.getElementById('keen-slider-next')
+      const keenSliderPrevious = document.getElementById('keen-slider-previous');
+      const keenSliderNext = document.getElementById('keen-slider-next');
     
-      const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
-      const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
+      const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop');
+      const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop');
     
-      keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-      keenSliderNext.addEventListener('click', () => keenSlider.next())
+      keenSliderPrevious.addEventListener('click', () => keenSlider.prev());
+      keenSliderNext.addEventListener('click', () => keenSlider.next());
     
-      keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
-      keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
-    </script>
+      keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev());
+      keenSliderNextDesktop.addEventListener('click', () => keenSlider.next());
     
+      return () => {
+        keenSlider.destroy();
+      };
+    }, []);
+    return (
     <section className="bg-gray-50">
       <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Don't just take our word for it...
-            </h2>
-    
+          <div id='services'>
+           <section className="bg-gray-50">
             <p className="mt-4 text-gray-700">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas veritatis illo placeat
               harum porro optio fugit a culpa sunt id!
@@ -99,6 +96,7 @@ export default function Services() {
                 </svg>
               </button>
             </div>
+            </section>
           </div>
     
           <div className="-mx-6 lg:col-span-2 lg:mx-0">
@@ -377,6 +375,6 @@ export default function Services() {
           </button>
         </div>
       </div>
-    </section></div>
+    </section>
   )
 }
