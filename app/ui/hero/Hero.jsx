@@ -45,12 +45,7 @@ export default function HeroSection() {
           </h2>
        
         <p className='md:h-55 text-lg md:mx-8 mt-2 font-semibold text-gray-600 leading-tight md:leading-normal'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Laborum asperiores velit reiciendis eveniet eaque magnam deserunt cupiditate? 
-          Molestias rerum necessitatibus tempora dicta ducimus dolores error sed similique quod voluptate, 
-          quia consequatur placeat quis eum, maxime esse excepturi nobis nulla commodi deleniti. 
-          Enim, repellendus suscipit deleniti ducimus illo voluptatum molestias ratione, 
-          culpa modi iusto ullam fugit? Illo, tempora?
+          We empower industries with AI, Data Analytics and IoT solutions.
         </p>
         <Button className='mt-1 md:mt-20 py-6 md:order-last md:w-1/2'><Link href='#about'>Learn More</Link></Button>
       </section> 
