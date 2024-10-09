@@ -1,51 +1,64 @@
+"use client"
 import React from "react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import 'animate.css';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function HeroSection() {
+  
   return (
-    <>
-    <div id="hero"
-      className='scroll-mt-20 scroll-smooth w-full h-ful py-24 px-4 md:px-12 sm:px-6 lg:px-8 relative flex flex-col items-start justify-center'
-      style={{ 
-        backgroundImage: 'url(/hero1.jpeg)', 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        backgroundRepeat: 'no-repeat',
-        opacity: 1
-      }}
-    >       
-      <h1 className='text-white font-bold text-4xl md:mx-8 z-10'> 
-        Welcome to <span className='text-primary'>Kodetrix</span>
-      </h1>
+    <div 
+      id="hero"
+      className='gap-y-4 scroll-mt-20 scroll-smooth w-full h-full py-24 px-4 md:px-12 sm:px-6 lg:px-8 relative flex-col md:flex md:flex-row items-start shadow-sm shadow-gray-400'
+    >  
+      <section className=' -mr-2 md:w-1/2 flex flex-col gap-4 md:shadow-sm  z-10 animate__animated animate__fadeInRight animate__delay-1s'>
+      
+          <h1 className=' text-3xl text-foreground font-bold md:text-5xl md:mx-8 shadow-sm'> 
+            Welcome to {" "}
+             <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700'>
+              Kodetrix
+              {/* <Typewriter
+              words={["Kodetrix"]}
+              loop={false}
+              cursor
+              cursorStyle="||"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={2000}
+          /> */}
+              </span>
+          </h1>
+          <h2 className='text-xl md:text-2xl font-bold md:mx-8 mt-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-700'> 
+           
+          {/* {`Let's build great things together.`}  */}
+          <Typewriter
+              words={["Let's build great things together.", "Innovate and inspire with us!"]}
+              loop={false}
+              cursor={true}
+              cursorStyle="||"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={2000}
+          />
+          </h2>
+       
+        <p className='md:h-55 text-lg md:mx-8 mt-2 font-semibold text-gray-600 leading-tight md:leading-normal'>
+          We empower industries with AI, Data Analytics and IoT solutions.
+        </p>
+        <Button className='mt-1 md:mt-20 py-6 md:order-last md:w-1/2'><Link href='#about'>Learn More</Link></Button>
+      </section> 
+       
+      <section className='  md:w-1/2 flex mt-4 md:mt-0 md:shadow-sm animate__animated animate__fadeInDown animate__delay-2s'>
+        <Image 
+          src="/hero.jpeg" 
+          alt="hero-image" 
+          width={1000} 
+          height={600}
+          className='rounded-lg min-w-[45vw] md:min-h-[72vh]  h-[50%] md:h-auto'
+        />
+      </section>   
     </div>
-
-    {/* <div class=" flex-col mt-5 max-w-3xl text-center mx-auto">
-      <p class="text-lg text-gray-600 dark:text-neutral-400">Preline UI is an open-source set of prebuilt UI components, ready-to-use examples and Figma design system based on the utility-first Tailwind CSS framework.</p>
-    </div> */}
-{/* 
-    <div class="mt-8 gap-3 flex justify-center">
-      <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4" href="#">
-        Get started
-        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      </a>
-      <button type="button" class="relative group p-2 ps-3 inline-flex items-center gap-x-2 text-sm font-mono rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
-        $ npm i preline
-        <span class="flex justify-center items-center bg-gray-200 rounded-md size-7 dark:bg-neutral-700 dark:text-neutral-400">
-          <svg class="shrink-0 size-4 group-hover:rotate-6 transition" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
-        </span>
-      </button>
-    </div> */}
-    
-    {/* <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
-      <span class="text-sm text-gray-600 dark:text-neutral-400">Package Manager:</span>
-      <span class="text-sm font-bold text-gray-900 dark:text-white">npm</span>
-      <svg class="size-5 text-gray-300 dark:text-neutral-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
-      </svg>
-      <a class="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="#">
-        Installation Guide
-        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      </a>
-    </div> */}
-    </>
-  );
-}
+   );
+ }
