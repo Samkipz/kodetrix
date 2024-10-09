@@ -6,8 +6,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-        <footer className="bg-primary flex flex-col justify-end bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
+        <footer className="flex flex-col justify-end text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
         <div className="flex w-full flex-col lg:gap-16 items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8">
         <div className="col-span-2 sm:col-span-1">
             <p className="font-medium">Services</p>
@@ -226,6 +227,7 @@ export default function Footer() {
                         height="24"
                         viewBox="0 0 512 512"
                         className="size-6"
+                        fill="currentColor"
                         aria-hidden="true"
                     >
                         <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
@@ -234,6 +236,7 @@ export default function Footer() {
                     </Link>
                     </li>
                     </ul>
+                    </div>
                     </div>
                     </div>
                     </div>
