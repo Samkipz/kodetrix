@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "animate.css";
 import { Typewriter } from "react-simple-typewriter";
@@ -16,164 +16,164 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 
-
 export default function Contact() {
   return (
-    <div
+    <section
       id="contact"
-      className="flex flex-col scroll-mt-20 scroll-smooth shadow-sm shadow-gray-400 min-h-screen"
-    >   
-        <h1 className="px-6 flex animate__animated animate__fadeInUp mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
+      className="min-h-[90vh] scroll-mt-20 scroll-smooth flex flex-col md:flex-row items-center justify-center gap-2  w-full h-full px-4 md:px-16 sm:px-6 lg:px-8"
+    >
+      <div className="flex px-4 lg:px-12 space-x-4 space-y-4 w-full">
+        <h1 className="px-6 flex mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
           Contact Us
         </h1>
-    <>
-      {/* Hero */}
-      <div className="relative ">
-      
-        <div className="container py-24 sm:py-32">
-        
-          {/* Grid */}
-          <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
-            <div>
-              <p className=" mx-3 inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                A vision for the future
-              </p>
-              {/* Title */}
-              <div className="mt-4 md:mb-12 max-w-2xl">
-                <h1 className="mb-4 mx-3 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl">
-                <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700'>
-                    Kodetrix
-                  </span> Unleashes Your Future in the Sky
-                </h1>
-                <p className="mx-2 md:text-xl text-muted-foreground">
-                  Experience limitless possibilities with our cutting-edge IT
-                  solutions.
-                </p>
-              </div>
-              {/* End Title */}
-              {/* Blockquote */}
-              <blockquote className="hidden md:block relative max-w-sm">
-                <svg
-                  className="absolute top-0 start-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-foreground/10"
-                  width={16}
-                  height={16}
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <div className="mx-3 relative z-10">
-                  <p className="text-xl italic">
-                  <Typewriter
-                    words={["Let us be your fast and professional partner.", "Leave your details and we will get back to you"]}
-                    loop={false}
-                    cursor={true}
-                    cursorStyle="||"
-                    typeSpeed={100}
-                    deleteSpeed={50}
-                    delaySpeed={2000}
-                  />
-                    
+        <>
+          {/* Hero */}
+          <div className="relative ">
+            <div className="container py-24 sm:py-32">
+              {/* Grid */}
+              <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
+                <div>
+                  <p className=" mx-3 inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                    A vision for the future
                   </p>
-                </div>
-                <footer className="mx-3 mt-3">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src="https://placehold.co/100x100"
-                        alt="Image Description"
-                      />
-                    </div>
-                    <div className="grow ms-4">
-                      <div className="font-semibold">Rishard Munene</div>
-                      <div className="text-xs text-muted-foreground">
-                        Chief Technology Officer | Kodetrix
-                      </div>
-                    </div>
+                  {/* Title */}
+                  <div className="mt-4 md:mb-12 max-w-2xl">
+                    <h1 className="mb-4 mx-3 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
+                        Kodetrix
+                      </span>{" "}
+                      Unleashes Your Future in the Sky
+                    </h1>
+                    <p className="mx-2 md:text-xl text-muted-foreground">
+                      Experience limitless possibilities with our cutting-edge
+                      IT solutions.
+                    </p>
                   </div>
-                </footer>
-              </blockquote>
-              {/* End Blockquote */}
-            </div>
-            {/* End Col */}
-            <div>
-              {/* Form */}
-              <form>
-                <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto md:-ml-2">
-                  {/* Card */}
-                  <Card>
-                    <CardHeader className="text-center">
-                      <h2 className="text-2xl font-semibold leading-none tracking-tight">
-                        Contact Us
-                      </h2>
-                      <CardDescription>
-                        Fill the form to get in touch|{"  "}
-                        <a
-                          className="text-primary hover:underline underline-offset-4"
-                          href="mailto:info@kodetrix.com"
-                        >
-                         Direct chat
-                        </a>
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      
-                      <div className="relative">
-                        <Separator asChild className="my-3 bg-background">
-                          <div className="py-3 flex items-center text-xs text-muted-foreground uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-700 dark:after:border-gray-700">
-                            Or
-                          </div>
-                        </Separator>
-                      </div>
-                      <div className="mt-5">
-                        {/* Grid */}
-                        <div className="grid grid-cols-2 gap-4">
-                          <Input placeholder="First name" />
-                          <Input placeholder="Last name" />
-                          <Input placeholder="Email" />
-                          <Input placeholder="Company name if any" />
-                           <Textarea
-                            className="col-span-2"
-                            placeholder="Message"
-                          /> 
-                         
-                          <div className="flex items-center space-x-2 mt-3 col-span-2">
-                            <Checkbox id="terms" />
-                            <Label htmlFor="terms">
-                              Accept terms and conditions
-                            </Label>
-                          </div>
-                          <Button className="mt-3 col-span-2">
-                            Submit
-                          </Button>
+                  {/* End Title */}
+                  {/* Blockquote */}
+                  <blockquote className="hidden md:block relative max-w-sm">
+                    <svg
+                      className="absolute top-0 start-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-foreground/10"
+                      width={16}
+                      height={16}
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <div className="mx-3 relative z-10">
+                      <p className="text-xl italic">
+                        <Typewriter
+                          words={[
+                            "Let us be your fast and professional partner.",
+                            "Leave your details and we will get back to you",
+                          ]}
+                          loop={false}
+                          cursor={true}
+                          cursorStyle="||"
+                          typeSpeed={100}
+                          deleteSpeed={50}
+                          delaySpeed={2000}
+                        />
+                      </p>
+                    </div>
+                    <footer className="mx-3 mt-3">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                          <img
+                            className="h-8 w-8 rounded-full"
+                            src="https://placehold.co/100x100"
+                            alt="Image Description"
+                          />
                         </div>
-                        {/* Grid End */}
+                        <div className="grow ms-4">
+                          <div className="font-semibold">Rishard Munene</div>
+                          <div className="text-xs text-muted-foreground">
+                            Chief Technology Officer | Kodetrix
+                          </div>
+                        </div>
                       </div>
-                    </CardContent>
-                  </Card>
-                  {/* End Card */}
+                    </footer>
+                  </blockquote>
+                  {/* End Blockquote */}
                 </div>
-              </form>
-              {/* End Form */}
-            </div>
-            {/* End Col */}
-          </div>
-          {/* End Grid */}
-          {/* Clients Section */}
-          {/* <div className="mt-6 md:mt-12 py-3 flex items-center text-muted-foreground text-sm gap-x-1.5 after:flex-[1_1_0%] after:border-t after:ms-6 after:border-t-muted-foreground/50">
+                {/* End Col */}
+                <div>
+                  {/* Form */}
+                  <form>
+                    <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto md:-ml-2">
+                      {/* Card */}
+                      <Card>
+                        <CardHeader className="text-center">
+                          <h2 className="text-2xl font-semibold leading-none tracking-tight">
+                            Contact Us
+                          </h2>
+                          <CardDescription>
+                            Fill the form to get in touch|{"  "}
+                            <a
+                              className="text-primary hover:underline underline-offset-4"
+                              href="mailto:info@kodetrix.com"
+                            >
+                              Direct chat
+                            </a>
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="relative">
+                            <Separator asChild className="my-3 bg-background">
+                              <div className="py-3 flex items-center text-xs text-muted-foreground uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-700 dark:after:border-gray-700">
+                                Or
+                              </div>
+                            </Separator>
+                          </div>
+                          <div className="mt-5">
+                            {/* Grid */}
+                            <div className="grid grid-cols-2 gap-4">
+                              <Input placeholder="First name" />
+                              <Input placeholder="Last name" />
+                              <Input placeholder="Email" />
+                              <Input placeholder="Company name if any" />
+                              <Textarea
+                                className="col-span-2"
+                                placeholder="Message"
+                              />
+
+                              <div className="flex items-center space-x-2 mt-3 col-span-2">
+                                <Checkbox id="terms" />
+                                <Label htmlFor="terms">
+                                  Accept terms and conditions
+                                </Label>
+                              </div>
+                              <Button className="mt-3 col-span-2">
+                                Submit
+                              </Button>
+                            </div>
+                            {/* Grid End */}
+                          </div>
+                        </CardContent>
+                      </Card>
+                      {/* End Card */}
+                    </div>
+                  </form>
+                  {/* End Form */}
+                </div>
+                {/* End Col */}
+              </div>
+              {/* End Grid */}
+              {/* Clients Section */}
+              {/* <div className="mt-6 md:mt-12 py-3 flex items-center text-muted-foreground text-sm gap-x-1.5 after:flex-[1_1_0%] after:border-t after:ms-6 after:border-t-muted-foreground/50">
             <span className="font-semibold bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               50,000
             </span>
             individuals and companies trust Cloud Unleashed
           </div> */}
-          {/* Clients */}
-          {/* <div className="flex flex-wrap gap-x-6 sm:gap-x-12 lg:gap-x-24">
+              {/* Clients */}
+              {/* <div className="flex flex-wrap gap-x-6 sm:gap-x-12 lg:gap-x-24">
             <svg
               className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-muted-foreground"
               enableBackground="new 0 0 2499 614"
@@ -308,13 +308,13 @@ export default function Contact() {
               />
             </svg>
           </div> */}
-          {/* End Clients */}
-        </div>
-        {/* End Clients Section */}
+              {/* End Clients */}
+            </div>
+            {/* End Clients Section */}
+          </div>
+          {/* End Hero */}
+        </>
       </div>
-      {/* End Hero */}
-    </>
-    </div>
+    </section>
   );
-  
 }
