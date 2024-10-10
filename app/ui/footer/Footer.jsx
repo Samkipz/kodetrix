@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-<<<<<<< Updated upstream
     <footer className="flex flex-col  justify-end text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
       <div className="flex w-full flex-col lg:gap-16 items-center justify-center ">
         <div className="flex pt-8 gap-32">
@@ -12,26 +11,6 @@ export default function Footer() {
             <p className="font-medium">Services</p>
 
             <ul className="mt-6 space-y-4 text-sm">
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  1on1 Coaching{" "}
-                </Link> */}
-              </li>
-
-              <li>
-                {/* <Link
-                  href="#"
-                  className="text-muted-foreground transition hover:opacity-75"
-                >
-                  {" "}
-                  Company Review{" "}
-                </Link> */}
-              </li>
-
               <li>
                 <Link
                   href="#"
@@ -125,19 +104,6 @@ export default function Footer() {
                     stroke="currentColor"
                     className="size-6"
                     aria-hidden="true"
-=======
-    <footer className="flex flex-col justify-end text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0">
-      <div className="flex w-full flex-col lg:gap-16 items-center justify-center">
-        <div className="  flex flex-col items-center justify-center">
-          <div className="ml-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8">
-            <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium">Services</p>
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground transition hover:opacity-75"
->>>>>>> Stashed changes
                   >
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
