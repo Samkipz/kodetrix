@@ -21,25 +21,25 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col scroll-mt-20 scroll-smooth shadow-sm shadow-gray-400 min-h-screen"
+      className="flex flex-col scroll-mt-20 scroll-smooth shadow-sm shadow-gray-400 min-h-[90vh]"
     >   
-        <h1 className="px-6 flex animate__animated animate__fadeInUp mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
+        <h1 className="md:px-16 px-2 py-16 flex animate__animated animate__fadeInUp  text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
           Contact Us
         </h1>
     <>
       {/* Hero */}
       <div className="relative ">
       
-        <div className="container py-24 sm:py-32">
+        <div className="container -py-32 md:-py-24 sm:py-32 ">
         
           {/* Grid */}
-          <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="md:ml-12 grid items-center md:grid-cols-2 gap-8 lg:gap-12">
             <div>
               <p className=" mx-3 inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
                 A vision for the future
               </p>
               {/* Title */}
-              <div className="mt-4 md:mb-12 max-w-2xl">
+              <div className="mt-1 md:mb-12 max-w-2xl">
                 <h1 className="mb-4 mx-3 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl">
                 <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700'>
                     Kodetrix
