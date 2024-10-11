@@ -1,8 +1,8 @@
-import { Quicksand, Lusitana } from 'next/font/google';
+import { Quicksand, Alex_Brush } from 'next/font/google';
  
-export const inter = Quicksand({ subsets: ['latin'] });
+export const quicksand = Quicksand({ subsets: ['latin'] });
  
-export const lusitana = Lusitana({
-  weight: ['400', '700'],
+export const alex_Brush = Alex_Brush({
+  weight: ['400'],
   subsets: ['latin'],
 });
