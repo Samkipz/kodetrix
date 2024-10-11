@@ -22,8 +22,8 @@ export default function Contact() {
       id="contact"
       className="min-h-[90vh] scroll-mt-20 scroll-smooth flex flex-col md:flex-row items-center justify-center gap-2  w-full h-full px-4 md:px-16 sm:px-6 lg:px-8"
     >
-      <div className="flex px-4 lg:px-12 space-x-4 space-y-4 w-full">
-        <h1 className="px-6 flex mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">
+      <div className="mt-8 flex flex-col px-4 lg:px-12 space-x-4 space-y-4 w-full">
+        <h1 className="px-6 flex mt-2 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 border-2 border-red-500">
           Contact Us
         </h1>
         <>
