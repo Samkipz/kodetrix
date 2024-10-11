@@ -24,11 +24,7 @@ export default function HeroSection() {
             We empower industries with{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
               <Typewriter
-                words={[
-                  "Artificial Intelligence",
-                  "Data Analytics",
-                  "IoT solutions",
-                ]}
+                words={["AI", "Data Analytics", "IoT solutions"]}
                 loop={false}
                 cursor
                 cursorStyle="||"
@@ -42,7 +38,7 @@ export default function HeroSection() {
             At Kodetrix, we specialize in delivering innovative technology
             solutions powered by data analytics, artificial intelligence,
             machine learning, and IoT. Our focus is on driving real-world impact
-            for industries like Finance, Agriculture, and Health. Whether you're
+            for industries like Finance, Agriculture, and Health. Whether you are
             an individual client or a corporate entity, we are here to help you
             thrive in the digital age.
           </p>
@@ -62,7 +58,7 @@ export default function HeroSection() {
         {/* Right Image Section */}
         <div className="mt-8 md:mt-0 flex items-center justify-center xl:justify-start w-full md:w-1/2 animate__animated animate__fadeInDown animate__delay-2s">
           <Image
-            src="/silho1.jpeg"
+            src="/Bg.png"
             alt="hero-image"
             width={530}
             height={530}

@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col w-full">
       <Navbar className />
 
-      <div className="flex min-h-[90vh]">
+      <div className="flex min-h-[90vh] bg-primary-foreground">
         <HeroSection />
       </div>
 
