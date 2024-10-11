@@ -342,8 +342,8 @@ export default function Contact() {
             <p
               className={`${alex_Brush.className} text-md sm:text-lg font-bold font-large bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-700 md:text-4xl md:leading-normal`}
             >
-              "Let us be your fast and professional partner.Leave your details
-              and we will get back to you "
+              Let us be your fast and professional partner.Leave your details
+              and we will get back to you
             </p>
           </blockquote>
           <footer className="mx-3 mt-3">
