@@ -3,11 +3,11 @@ import React from 'react'
 export default function Services() {
   return (
     // <!-- component -->
-<div id="services" className="section relative pt-20 scroll-mt-20 scroll-smooth pb-8 md:pt-16 md:pb-0">
+<div id="services" className="section relative pt-20 scroll-mt-20 scroll-smooth pb-8 md:pt-16 md:pb-0 border-2 border-red-500">
     {/* <h1 className="mx-6  text-3xl font-bold  bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 animate__animated animate__fadeInUp">
      Services We Offer
     </h1> */}
-    <div className="container xl:max-w-6xl mx-auto px-4">
+    <div className="container xl:max-w-6xl mx-auto px-4 border-2 border-red-500">
         {/* <!-- Heading start --> */}
         <header className="text-center mx-auto mb-12 lg:px-20">
             <h2 className="text-2xl leading-normal mb-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">What We Do</h2>

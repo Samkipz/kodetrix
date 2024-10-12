@@ -65,158 +65,165 @@ export default function Navbar() {
 
   return (
     <header className="sticky z-30 top-0 min-h-[10vh] flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
-      <span>
-        <Link href="/">
-          {/* Logo clickable and redirect to the home page  */}
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={140}
-            height={50}
-            className="h-auto w-auto"
-          />
-        </Link>
-      </span>
-      <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-        <Link
-          href="#hero"
-          className={clsx(
-            "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
-            {
-              "text-primary": hash === "#hero" || !hash,
-            }
-          )}
-          onClick={() => handleScroll("#hero")}
-        >
-          Home
-          <span
-            className={clsx(
-              "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
-              {
-                "scale-x-125": hash === "#hero" || !hash,
-                "scale-x-0 group-hover:scale-x-125": hash !== "#hero",
-              }
-            )}
-          ></span>
-        </Link>
-        <Link
-          href="#about"
-          className={clsx(
-            "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
-            {
-              "text-primary": hash === "#about",
-            }
-          )}
-          onClick={() => handleScroll("#about")}
-        >
-          About
-          <span
-            className={clsx(
-              "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
-              {
-                "scale-x-125": hash === "#about",
-                "scale-x-0 group-hover:scale-x-125": hash !== "#about",
-              }
-            )}
-          ></span>
-        </Link>
-        <Link
-          href="#services"
-          className={clsx(
-            "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
-            {
-              "text-primary": hash === "#services",
-            }
-          )}
-          onClick={() => handleScroll("#services")}
-        >
-          Services
-          <span
-            className={clsx(
-              "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
-              {
-                "scale-x-125": hash === "#services",
-                "scale-x-0 group-hover:scale-x-125": hash !== "#services",
-              }
-            )}
-          ></span>
-        </Link>
-        <Link
-          href="#contact"
-          className={clsx(
-            "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
-            {
-              "text-primary": hash === "#contact",
-            }
-          )}
-          onClick={() => handleScroll("#contact")}
-        >
-          Contact
-          <span
-            className={clsx(
-              "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
-              {
-                "scale-x-125": hash === "#contact",
-                "scale-x-0 group-hover:scale-x-125": hash !== "#contact",
-              }
-            )}
-          ></span>
-        </Link>
-
-        <span className="text-muted-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2">
-          <ModeToggle />
+      <div className="container flex justify-between px-4 xl:max-w-6xl mx-auto">
+        <span>
+          <Link href="/">
+            {/* Logo clickable and redirect to the home page  */}
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={140}
+              height={50}
+              className="h-auto w-auto"
+            />
+          </Link>
         </span>
-      </nav>
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="shrink-0 md:hidden">
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle navigation menu</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent
-          side="left"
-          className="flex flex-col border-2  justify-between"
-        >
-          <nav className="grid gap-6 text-lg font-medium">
-            <SheetClose asChild>
-              <Link
-                href="/"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Home
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link
-                href="#about"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                About
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link
-                href="#services"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Services
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link
-                href="#contact"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Contact
-              </Link>
-            </SheetClose>
-          </nav>
-          <span className="sticky bottom-0 text-muted-foreground transition-colors hover:text-foreground">
+        <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+          <Link
+            href="#hero"
+            className={clsx(
+              "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
+              {
+                "text-primary": hash === "#hero" || !hash,
+              }
+            )}
+            onClick={() => handleScroll("#hero")}
+          >
+            Home
+            <span
+              className={clsx(
+                "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
+                {
+                  "scale-x-125": hash === "#hero" || !hash,
+                  "scale-x-0 group-hover:scale-x-125": hash !== "#hero",
+                }
+              )}
+            ></span>
+          </Link>
+          <Link
+            href="#about"
+            className={clsx(
+              "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
+              {
+                "text-primary": hash === "#about",
+              }
+            )}
+            onClick={() => handleScroll("#about")}
+          >
+            About
+            <span
+              className={clsx(
+                "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
+                {
+                  "scale-x-125": hash === "#about",
+                  "scale-x-0 group-hover:scale-x-125": hash !== "#about",
+                }
+              )}
+            ></span>
+          </Link>
+          <Link
+            href="#services"
+            className={clsx(
+              "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
+              {
+                "text-primary": hash === "#services",
+              }
+            )}
+            onClick={() => handleScroll("#services")}
+          >
+            Services
+            <span
+              className={clsx(
+                "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
+                {
+                  "scale-x-125": hash === "#services",
+                  "scale-x-0 group-hover:scale-x-125": hash !== "#services",
+                }
+              )}
+            ></span>
+          </Link>
+          <Link
+            href="#contact"
+            className={clsx(
+              "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
+              {
+                "text-primary": hash === "#contact",
+              }
+            )}
+            onClick={() => handleScroll("#contact")}
+          >
+            Contact
+            <span
+              className={clsx(
+                "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
+                {
+                  "scale-x-125": hash === "#contact",
+                  "scale-x-0 group-hover:scale-x-125": hash !== "#contact",
+                }
+              )}
+            ></span>
+          </Link>
+
+          <span className="text-muted-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2">
             <ModeToggle />
           </span>
-        </SheetContent>
-      </Sheet>
+        </nav>
+        <Sheet>
+          <span className="sticky flex shrink-0 md:hidden gap-2 bottom-0 text-muted-foreground transition-colors hover:text-foreground">
+            <ModeToggle />
+            <SheetTrigger asChild>
+              <Button
+                variant="outline"
+                size="icon"
+                className="shrink-0 md:hidden"
+              >
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+          </span>
+
+          <SheetContent
+            side="left"
+            className="flex flex-col border-2  justify-between"
+          >
+            <nav className="grid gap-6 text-lg font-medium">
+              <SheetClose asChild>
+                <Link
+                  href="/"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Home
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link
+                  href="#about"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  About
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link
+                  href="#services"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Services
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link
+                  href="#contact"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Contact
+                </Link>
+              </SheetClose>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }
