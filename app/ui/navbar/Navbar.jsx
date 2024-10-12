@@ -163,6 +163,7 @@ export default function Navbar() {
               )}
             ></span>
           </Link>
+          
 
           <span className="text-muted-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2">
             <ModeToggle />
