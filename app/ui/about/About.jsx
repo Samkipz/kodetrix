@@ -46,9 +46,9 @@ export default function About() {
     >
       <div className="container flex flex-col md:flex-row justify-between items-center xl:max-w-6xl mx-auto">
         <div className="flex flex-col px-4 w-full md:w-1/2" ref={textRef}>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 text-center md:text-left">
             About Us
-          </h1>
+          </h2>
           <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left">
             Kodetrix is a licensed firm focused on delivering cutting-edge
             technology solutions to individual clients and corporates. We

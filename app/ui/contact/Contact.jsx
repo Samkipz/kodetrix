@@ -321,7 +321,7 @@ export default function Contact() {
     //   </div>
     // </section>
     <section
-      id="hero"
+      id="contact"
       className="flex flex-col py-12 w-full scroll-mt-20 scroll-smooth min-h-[90vh]"
     >
       <div className="flex flex-col items-center justify-center md:flex-row px-4 lg:px-12 md:space-x-4 w-full">
