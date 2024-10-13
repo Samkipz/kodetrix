@@ -66,11 +66,11 @@ export default function Navbar() {
   return (
     <header className="sticky z-30 top-0 min-h-[10vh] flex h-20 items-center gap-4 border-b border-border-color bg-background px-4 md:px-12 w-full justify-between">
       <div className="container flex justify-between px-4 xl:max-w-6xl mx-auto">
-        <span>
+        <span className="">
           <Link href="/">
             {/* Logo clickable and redirect to the home page  */}
             <Image
-              src="/logo.png"
+              src="/logo2.png"
               alt="Logo"
               width={140}
               height={50}
@@ -170,7 +170,7 @@ export default function Navbar() {
           </span>
         </nav>
         <Sheet>
-          <span className="sticky flex shrink-0 md:hidden gap-2 bottom-0 text-muted-foreground transition-colors hover:text-foreground">
+          <span className="sticky flex shrink-0 md:hidden gap-2 ml-4 bottom-0 text-muted-foreground transition-colors hover:text-foreground ">
             <ModeToggle />
             <SheetTrigger asChild>
               <Button

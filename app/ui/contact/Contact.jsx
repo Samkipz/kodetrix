@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { alex_Brush } from "../fonts";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import Image from "next/image";
 import "animate.css";
@@ -56,11 +57,13 @@ export default function Contact() {
           <footer className="mx-3 mt-3">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8 rounded-full"
-                  src="https:placehold.co/100x100"
-                  alt="Image Description"
-                />
+                <Avatar>
+                  <AvatarImage
+                    src="https://gitrrrhub.com/shadcn.png"
+                    alt="@shadcn"
+                  />
+                  <AvatarFallback>RM</AvatarFallback>
+                </Avatar>
               </div>
               <div className="grow ms-4">
                 <div className="font-semibold">Rishard Munene</div>

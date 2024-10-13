@@ -7,11 +7,11 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-center items-center bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0 ">
-      <div className="flex w-full flex-col lg:gap-16 items-center justify-center border-2 border-red-500">
+      <div className="flex w-full flex-col lg:gap-16 items-center justify-center">
         
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8 border-2 border-red-500">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8">
             <div className="col-span-2 sm:col-span-1 ">
-              <p className="font-medium">Services</p>
+              <p className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
@@ -52,7 +52,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-span-2 sm:col-span-1 ">
-              <p className="font-medium">Company</p>
+              <p className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">Company</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
@@ -75,7 +75,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-span-2 sm:col-span-1 ">
-              <p className="font-medium">Helpful Links</p>
+              <p className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">Helpful Links</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
@@ -89,7 +89,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-span-2 sm:col-span-1 ">
-              <p className="font-medium">Get in touch</p>
+              <p className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">Get in touch</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
