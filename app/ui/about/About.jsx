@@ -106,7 +106,7 @@ export default function About() {
         >
           <Image
             src="/about.jpeg"
-            alt="Desk setup"
+            alt="About Us Image"
             className="rounded-lg"
             width={500}
             height={400}
