@@ -70,7 +70,7 @@ export default function Navbar() {
           <Link href="/">
             {/* Logo clickable and redirect to the home page  */}
             <Image
-              src="/logo2.png"
+              src="/logo.png"
               alt="Logo"
               width={140}
               height={50}
