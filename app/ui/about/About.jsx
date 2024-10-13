@@ -105,12 +105,11 @@ export default function About() {
           ref={imageRef}
         >
           <Image
-            src="/hero1.jpeg"
+            src="/about.jpeg"
             alt="Desk setup"
             className="rounded-lg"
             width={500}
             height={400}
-            objectFit="cover"
           />
         </div>
       </div>
