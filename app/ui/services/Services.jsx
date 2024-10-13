@@ -16,16 +16,17 @@ export default function Services() {
           <h2 className="mb-2 text-2xl sm:text-3xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 text-center md:text-left">
             What We Do
           </h2>
-          {/* <h2 className="text-2xl mb-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700">What We Do</h2> */}
+
           <p className="text-gray-500 leading-relaxed font-light text-xl pb-2 text-center md:text-left mb-4">
             Save time managing advertising &amp; Content for your business.
           </p>
         </header>
         {/* <!-- End heading --> */}
         {/* <!-- row --> */}
-        <div className="flex flex-wrap flex-row -mx-4 text-center">
+
+        <div className="flex flex-wrap flex-row mx-4 text-center ">
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
             style={{
               visibility: "visible",
@@ -33,12 +34,9 @@ export default function Services() {
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200  transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
+            <div className="py-8 px-4 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="inline-block text-gray-900 mb-4"></div>
+              <h3 className="text-lg leading-normal mb-2 font-semibold">
                 SEO Services
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
@@ -46,24 +44,19 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
+
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
-            data-wow-delay=".1s"
             style={{
               visibility: "visible",
               animationDuration: "1s",
-              animationDelay: "0.1s",
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200  transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
+              <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
                 Social Content
               </h3>
@@ -72,24 +65,18 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
-            data-wow-delay=".3s"
             style={{
               visibility: "visible",
               animationDuration: "1s",
-              animationDelay: "0.3s",
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
+              <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
                 Creative ads
               </h3>
@@ -98,10 +85,9 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
             style={{
               visibility: "visible",
@@ -109,11 +95,8 @@ export default function Services() {
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
+              <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
                 Brand Identity
               </h3>
@@ -122,24 +105,18 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
-            data-wow-delay=".1s"
             style={{
               visibility: "visible",
               animationDuration: "1s",
-              animationDelay: "0.1s",
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
+              <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
                 Budget &amp; Marketing
               </h3>
@@ -148,24 +125,18 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
           <div
-            className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
             data-wow-duration="1s"
-            data-wow-delay=".3s"
             style={{
               visibility: "visible",
               animationDuration: "1s",
-              animationDelay: "0.3s",
               animationName: "fadeInUp",
             }}
           >
-            {/* <!-- service block --> */}
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4">
-                {/* <!-- icon --> */}
-              </div>
+              <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
                 Optimize conversions
               </h3>
@@ -174,10 +145,8 @@ export default function Services() {
                 content.
               </p>
             </div>
-            {/* <!-- end service block --> */}
           </div>
         </div>
-        {/* <!-- end row --> */}
       </div>
     </div>
   );

@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-center items-center bg-background-secondary text-foreground-primary pt-12 px-4 sm:px-6 w-full md:px-12 bottom-0 ">
-      <div className="flex w-full flex-col lg:gap-16 items-center justify-center ">
-        <div className="flex flex-col items-center justify-center ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8 ">
+      <div className="flex w-full flex-col lg:gap-16 items-center justify-center border-2 border-red-500">
+        
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-32 pt-8 border-2 border-red-500">
             <div className="col-span-2 sm:col-span-1 ">
               <p className="font-medium">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
@@ -186,7 +186,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
+        
       </div>
 
       <div className="mt-4 flex flex-col border-t border-gray-400 w-full dark:border-gray-200 py-4">
