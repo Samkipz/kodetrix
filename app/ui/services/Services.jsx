@@ -37,7 +37,7 @@ export default function Services() {
             <div className="py-8 px-4 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
               <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold">
-                SEO Services
+                Web and Mobile Development
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 This is a wider card with supporting text below as a natural
@@ -58,7 +58,7 @@ export default function Services() {
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200  transform transition duration-300 ease-in-out hover:-translate-y-2">
               <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Social Content
+                IT Consultancy
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 This is a wider card with supporting text below as a natural
@@ -78,7 +78,7 @@ export default function Services() {
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
               <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Creative ads
+                IT Support
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 This is a wider card with supporting text below as a natural
@@ -98,7 +98,27 @@ export default function Services() {
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
               <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Brand Identity
+                AI &amp; Automation
+              </h3>
+              <p className="text-gray-500 dark:text-gray-400">
+                This is a wider card with supporting text below as a natural
+                content.
+              </p>
+            </div>
+          </div>
+          <div
+            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
+            data-wow-duration="1s"
+            style={{
+              visibility: "visible",
+              animationDuration: "1s",
+              animationName: "fadeInUp",
+            }}
+          >
+            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="inline-block text-gray-900 mb-4"></div>
+              <h3 className="text-lg leading-normal mb-2 font-semibold whitespace-nowrap">
+                DevOps &amp; Cloud Computing
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 This is a wider card with supporting text below as a natural
@@ -118,27 +138,7 @@ export default function Services() {
             <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
               <div className="inline-block text-gray-900 mb-4"></div>
               <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Budget &amp; Marketing
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Optimize conversions
+                Data Analytics
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 This is a wider card with supporting text below as a natural

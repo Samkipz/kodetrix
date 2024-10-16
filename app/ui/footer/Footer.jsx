@@ -7,53 +7,53 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div class="flex items-end w-full">
-      <footer class="w-full text-gray-700 bg-gray-100 body-font dark:bg-background">
-        <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-          <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+    <div className="flex items-end w-full">
+      <footer className="w-full text-gray-700 bg-gray-100 body-font dark:bg-background">
+        <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+          <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
             <Link
               href="/"
               className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700"
             >
               KODETRIX
             </Link>
-            <p class="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-gray-500">
               Innovating the future today
             </p>
-            <div class="mt-4">
-              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                <Link href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+            <div className="mt-4">
+              <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                <Link href="#" className="text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </Link>
-                <Link href="#" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <Link href="#" className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
                     viewBox="0 0 512 512"
                   >
                     <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                   </svg>
                 </Link>
-                <Link href="#" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <Link href="#" className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
                     <rect
@@ -67,14 +67,14 @@ export default function Footer() {
                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                   </svg>
                 </Link>
-                <Link href="#" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                <Link href="#" className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="0"
-                    class="w-5 h-5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="0"
+                    className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -87,110 +87,110 @@ export default function Footer() {
               </span>
             </div>
           </div>
-          <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
-            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 class="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
+          <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+            <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
                 Company
               </h2>
-              <nav class="mb-10 list-none">
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+              <nav className="mb-10 list-none">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     About
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Meet the Team
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Blog
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Terms &amp; Privacy
                   </Link>
                 </li>
               </nav>
             </div>
-            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 class="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
+            <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
                 Services
               </h2>
-              <nav class="mb-10 list-none">
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+              <nav className="mb-10 list-none">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Custom Software Development
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     AI & Machine Learning Solutions
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Data Analytics & Business Intelligence
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Networking Solutions and Services
                   </Link>
                 </li>
               </nav>
             </div>
-            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 class="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
+            <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
                 Industries
               </h2>
-              <nav class="mb-10 list-none">
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+              <nav className="mb-10 list-none">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Health
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Education
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Agriculture
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Banking
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Real Estate
                   </Link>
                 </li>
               </nav>
             </div>
-            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 class="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
+            <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 uppercase title-font">
                 Contact
               </h2>
-              <nav class="mb-10 list-none">
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+              <nav className="mb-10 list-none">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Send a Message
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     Request a Quote
                   </Link>
                 </li>
-                <li class="mt-3">
-                  <Link href="#" class="text-muted-foreground">
+                <li className="mt-3">
+                  <Link href="#" className="text-muted-foreground">
                     +123-456-7890
                   </Link>
                 </li>
@@ -198,9 +198,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div class="bg-gray-300 dark:bg-primary-foreground">
-          <div class="container px-5 py-4 mx-auto">
-            <p class="text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 capitalize xl:text-center text-center">
+        <div className="bg-gray-300 dark:bg-primary-foreground">
+          <div className="container px-5 py-4 mx-auto">
+            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 capitalize xl:text-center text-center">
               &copy; {new Date().getFullYear()}. Kodetrix Ventures. All rights
               reserved.
             </p>

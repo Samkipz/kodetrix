@@ -9,11 +9,11 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="flex flex-col py-12 w-full scroll-mt-20 scroll-smooth min-h-[90vh]"
+      className="flex flex-col justify-center items-center py-12 w-full scroll-mt-20 scroll-smooth min-h-[90vh] "
     >
-      <div className="container flex flex-col md:flex-row justify-between items-center px-4 xl:max-w-6xl mx-auto">
+      <div className="container flex flex-col md:flex-row justify-between items-center px-4 xl:max-w-6xl mx-auto ">
         {/* Left Text Section */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center animate__animated animate__fadeInRight animate__delay-1s z-10">
+        <div className="w-full md:w-1/2 flex flex-col justify-center animate__animated animate__fadeInRight animate__delay-1s z-10 ">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-center md:text-left">
             Welcome to{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
