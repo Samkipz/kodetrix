@@ -19,10 +19,12 @@ export default function CompanyAboutSlider() {
 
   const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg"];
   const carouselText = [
-    "Agriculture text",
-    "Health industry text",
-    "Education industry text",
-    "Real Estate industry text",
+    "Agriculture ",
+    "Health",
+    "Education ",
+    "Enterprise Solutions",
+    "Financial Technology (FinTech)",
+    "Smart Cities and IoT"
   ];
 
   const descriptionText = [
@@ -30,6 +32,8 @@ export default function CompanyAboutSlider() {
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!"
   ];
 
   useEffect(() => {
