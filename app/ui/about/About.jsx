@@ -17,14 +17,21 @@ export default function CompanyAboutSlider() {
 
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
-  const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg", "/Education.jpg", "/Agrik.jpg"];
+  const images = [
+    "/Agrik.jpg",
+    "/health.jpg",
+    "/Education.jpg",
+    "/RE.jpeg",
+    "/Education.jpg",
+    "/Agrik.jpg",
+  ];
   const carouselText = [
     "Agriculture ",
     "Health",
     "Education ",
     "Enterprise Solutions",
     "Financial Technology (FinTech)",
-    "Smart Cities and IoT"
+    "Smart Cities and IoT",
   ];
 
   const descriptionText = [
@@ -33,7 +40,7 @@ export default function CompanyAboutSlider() {
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!"
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
   ];
 
   useEffect(() => {
@@ -159,14 +166,13 @@ export default function CompanyAboutSlider() {
                   </div>
                   {/* Text overlay on hover */}
                   <div className="absolute inset-0 flex flex-col items-center text-white px-4 py-2">
-                    <p className="font-bold text-3xl">{carouselText[index]}</p>
+                    <p className="font-bold text-3xl text-center">
+                      {carouselText[index]}
+                    </p>
                     <p className="text-xl text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out  mx-2 ">
                       {descriptionText[index]}
                       <br />
-                      <Link
-                        href="#"
-                        className="mt-8 hover:underline"
-                      >
+                      <Link href="#" className="mt-8 hover:underline">
                         Learn More
                       </Link>
                     </p>
