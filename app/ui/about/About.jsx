@@ -17,7 +17,7 @@ export default function CompanyAboutSlider() {
 
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
-  const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg"];
+  const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg", "/Education.jpg", "/Agrik.jpg"];
   const carouselText = [
     "Agriculture ",
     "Health",
