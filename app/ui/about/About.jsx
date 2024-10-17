@@ -108,7 +108,7 @@ export default function CompanyAboutSlider() {
         </div>
 
         {/* Right Section with improved carousel */}
-        <div className="w-full md:w-1/2 relative flex flex-col px-8">
+        <div className="w-full md:w-1/2 relative flex flex-col md:px-8">
           <p className="mt-4 md:mt-8 text-md sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 whitespace-nowrap pb-2">
             Key Industries
           </p>
