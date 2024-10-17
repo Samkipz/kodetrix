@@ -121,7 +121,7 @@ export default function CompanyAboutSlider() {
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
-            className="w-full relative rounded-lg "
+            className="w-full relative  "
             opts={{
               align: "start",
               loop: true,
@@ -135,11 +135,11 @@ export default function CompanyAboutSlider() {
                     width={500}
                     height={400}
                     alt={`Slide ${index + 1}`}
-                    className="object-cover w-full h-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105 hover:rounded-lg"
+                    className="object-cover w-full h-full  transition-transform duration-300 ease-in-out group-hover:scale-105"
                     priority
                   />
                   {/* Black overlay on hover */}
-                  <div className="absolute inset-0 bg-black opacity-50 rounded-lg transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 bg-black opacity-50  transition-opacity duration-300 ease-in-out"></div>
                   <div className="absolute inset-0 flex">
                     {/* Left tap region */}
                     <div
