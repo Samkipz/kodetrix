@@ -122,8 +122,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -166,7 +164,7 @@ export default function CompanyAboutSlider() {
       <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
         About Us
       </h2>
-      <div className="flex flex-col md:flex-row items-center w-full h-full">
+      <div className="flex flex-col gap-2 md:flex-row items-center w-full h-full">
         {/* Left Section */}
         <div className="w-full md:w-1/2 p-4">
           <p className="mt-4 md:mt-6 text-center md:text-left text-sm sm:text-base">
@@ -223,19 +221,22 @@ export default function CompanyAboutSlider() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 px-4">
+          <p className="mt-4 text-md sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-700 whitespace-nowrap">
+            Some of Our Industries
+          </p>
           <Carousel
             setApi={setApi}
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
-            className="w-full"
+            className="w-full flex items-center justify-center border-2 border-red-500"
             opts={{
               align: "start",
               loop: true,
             }}
           >
-            <CarouselContent>
+            <CarouselContent className="border-2 border-blue-500">
               {images.map((src, index) => (
                 <CarouselItem key={index} className="relative w-full">
                   <Image
@@ -250,7 +251,7 @@ export default function CompanyAboutSlider() {
               ))}
             </CarouselContent>
 
-            <div className="absolute text-white top-1/3 w-full text-center">
+            <div className="absolute text-white w-full text-center">
               <p className="font-bold text-3xl">{carouselText[current - 1]}</p>
               <div className="flex justify-center gap-2 mt-4">
                 <p className="text-xl px-2">{descriptionText[current - 1]}</p>
