@@ -45,21 +45,6 @@ export default function CompanyAboutSlider() {
     api.on("select", () => setCurrent(api.selectedScrollSnap() + 1));
   }, [api]);
 
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
-
-  const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg"];
-  const carouselText = [
-    "Agriculture text",
-    "Health industry text",
-    "Education industry text",
-    "Real Estate industry text",
-  ];
-  const descriptionText = [
-    "Some text about Agriculture ",
-    "Some text about Health industry ",
-    "Some text about Education industry ",
-    "Some text about Real Estate industry ",
-  ];
 
   return (
     <div className="container xl:max-w-6xl mx-auto">
