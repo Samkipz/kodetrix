@@ -27,9 +27,9 @@ export default function CompanyAboutSlider() {
 
   const descriptionText = [
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
+    "Some text about Health industry ",
+    "Some text about Education industry ",
+    "Some text about Real Estate industry ",
   ];
 
   useEffect(() => {
@@ -138,7 +138,7 @@ export default function CompanyAboutSlider() {
                     priority
                   />
                   {/* Black overlay on hover */}
-                  <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
                   <div className="absolute inset-0 flex">
                     {/* Left tap region */}
                     <div
@@ -154,17 +154,10 @@ export default function CompanyAboutSlider() {
                     />
                   </div>
                   {/* Text overlay on hover */}
-                  <div className="absolute inset-0 flex flex-col items-center text-white px-4 py-2">
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                     <p className="font-bold text-3xl">{carouselText[index]}</p>
-                    <p className="text-xl text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out  mx-2 ">
+                    <p className="text-xl px-2 mt-2">
                       {descriptionText[index]}
-                      <br />
-                      <Link
-                        href="#"
-                        className="mt-8 hover:underline"
-                      >
-                        Learn More
-                      </Link>
                     </p>
                   </div>
                 </CarouselItem>
