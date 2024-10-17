@@ -19,39 +19,43 @@ export default function CompanyAboutSlider() {
 
   const images = ["/Agrik.jpg", "/health.jpg", "/Education.jpg", "/RE.jpeg"];
   const carouselText = [
-    "Agriculture ",
+    "Agriculture",
     "Healthcare",
-    "Education ",
+    "Education",
     "Enterprise Solutions",
     "Financial Technology (FinTech)",
-    "Smart Cities and IoT"
+    "Smart Cities and IoT",
   ];
 
   const descriptionText = [
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non! ",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!"
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque provident, aliquid dicta assumenda non!",
   ];
 
   useEffect(() => {
     if (!api) return;
 
     setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCurrent(api.selectedScrollSnap());
 
-    api.on("select", () => setCurrent(api.selectedScrollSnap() + 1));
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
   }, [api]);
 
+  const scrollPrev = () => api?.scrollPrev();
+  const scrollNext = () => api?.scrollNext();
 
   return (
     <div className="container xl:max-w-6xl mx-auto">
       <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
         About Us
       </h2>
-      <div className="flex flex-col md:flex-row items-center w-full h-full">
+      <div className="flex flex-col gap-2 md:flex-row w-full p-4">
         {/* Left Section */}
         <div className="w-full md:w-1/2 p-4 flex flex-col justify-center items-center md:items-start">
           <p className="mt-4 md:mt-6 text-center md:text-left text-sm sm:text-base">
@@ -107,36 +111,56 @@ export default function CompanyAboutSlider() {
           </div>
         </div>
 
-        {/* Right Section */}
-        <div className="w-full md:w-1/2">
+        {/* Right Section with improved carousel */}
+        <div className="w-full md:w-1/2 relative flex flex-col px-8">
+          <p className="mt-4 md:mt-8 text-md sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 whitespace-nowrap pb-2">
+            Key Industries
+          </p>
           <Carousel
             setApi={setApi}
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
-            className="w-full"
+            className="w-full relative rounded-lg "
             opts={{
               align: "start",
               loop: true,
             }}
           >
-            <CarouselContent className=" rounded-lg">
+            <CarouselContent>
               {images.map((src, index) => (
-                <CarouselItem key={index} className="relative w-full group  rounded-lg">
+                <CarouselItem key={index} className="relative w-full group">
                   <Image
                     src={src}
                     width={500}
                     height={400}
                     alt={`Slide ${index + 1}`}
-                    className="object-cover"
+                    className="object-cover w-full h-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105 hover:rounded-lg"
                     priority
                   />
+                  {/* Black overlay on hover */}
+                  <div className="absolute inset-0 bg-black opacity-50 rounded-lg transition-opacity duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 flex">
+                    {/* Left tap region */}
+                    <div
+                      className="w-1/4 h-full cursor-pointer"
+                      onClick={scrollPrev}
+                    />
+                    {/* Middle region (non-interactive) */}
+                    <div className="w-1/2 h-full" />
+                    {/* Right tap region */}
+                    <div
+                      className="w-1/4 h-full cursor-pointer"
+                      onClick={scrollNext}
+                    />
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
 
-            <div className="absolute text-white top-1/3 w-full text-center">
-              <p className="font-bold text-3xl">{carouselText[current - 1]}</p>
+            {/* Slide text overlay */}
+            <div className="absolute text-white top-6 w-full text-center cursor-pointer z-10">
+              <p className="font-bold text-3xl">{carouselText[current]}</p>
               <div className="flex justify-center gap-2 mt-4">
                 <p className="text-xl px-2">{descriptionText[current]}</p>
               </div>
