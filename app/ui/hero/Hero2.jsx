@@ -34,7 +34,7 @@ export default function HeroSection() {
               />
             </span>
           </h2>
-          <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
+          <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left">
             At Kodetrix, we specialize in delivering innovative technology
             solutions powered by data analytics, artificial intelligence,
             machine learning, and IoT. Our focus is on driving real-world impact
@@ -45,17 +45,11 @@ export default function HeroSection() {
           <div className="mt-6 md:mt-8 flex justify-center md:justify-start">
             <Button
               variant="outline"
-              className="relative mt-8 sm:w-3/4 w-1/2 h-12 md:h-15 overflow-hidden rounded-lg bg-gradient-to-r from-purple-500 via-blue-500 to-teal-500 text-white dark:text-gray-100 font-bold text-sm md:text-lg lg:text-xl tracking-wide transition-transform duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-40 dark:focus:ring-opacity-60 shadow-lg group"
+              className="mt-8 w-1/2 h-12 group relative cursor-pointer overflow-hidden rounded-md border-2 border-primary px-5 py-3 font-semibold"
             >
-              {/* Arrow hover effect layer */}
-              <span className="absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-gradient-to-r from-blue-400 to-blue-700 dark:from-teal-400 dark:to-purple-600 transition-all duration-300 group-hover:h-32 group-hover:-translate-y-20 opacity-50"></span>
-
-              {/* Background layer for hover */}
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-700 dark:from-teal-500 dark:to-purple-600 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-90 group-hover:animate-none"></span>
-
-              {/* Inner content */}
-              <span className="relative z-10 text-white dark:text-gray-200 transition-colors duration-300 ease-in-out group-hover:text-white">
-                Request a Quote
+              <span className="ease absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-gradient-to-r from-blue-400 to-blue-700 transition-all duration-300 group-hover:h-64 group-hover:-translate-y-32"></span>
+              <span className="ease relative text-primary transition duration-300 group-hover:text-background">
+                Get Started
               </span>
             </Button>
           </div>
