@@ -5,6 +5,7 @@ import Services from "./ui/services/Services";
 import About from "./ui/about/About";
 import Contact from "./ui/contact/Contact";
 import Footer from "./ui/footer/Footer";
+import Team from './ui/team/Team';
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <Services />
+        </div>
+        <div className="flex flex-col">
+          <Team />
         </div>
         <div className="flex flex-col ">
           <Contact />
