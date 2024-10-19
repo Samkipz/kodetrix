@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <main className="flex flex-col w-full bg-primary-foreground">
-        <div className="flex flex-col  ">
+        <div className="flex flex-col">
           <About />
         </div>
         <div className="flex flex-col">
@@ -26,10 +26,10 @@ export default function Home() {
         <div className="flex flex-col">
           <Team />
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <Contact />
         </div>
-        <div className="flex  ">
+        <div className="flex ">
           <Footer />
         </div>
       </main>
