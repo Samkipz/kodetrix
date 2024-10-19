@@ -1,153 +1,105 @@
-import React from "react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
-export default function Services() {
+export default function IndustriesAndServices() {
   return (
-    // <!-- component -->
-    <div
-      id="services"
-      className="flex flex-col md:justify-center md:items-center py-2 w-full  scroll-mt-20 scroll-smooth min-h-[90vh] "
-    >
-      {/* <h1 className="mx-6  text-3xl font-bold  bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 animate__animated animate__fadeInUp">
-     Services We Offer
-    </h1> */}
-      <div className="container xl:max-w-6xl mx-auto ">
-        {/* <!-- Heading start --> */}
-        <header className="flex flex-col px-4 items-center justify-center md:justify-start md:items-start ">
-          <h2 className="mb-2 text-2xl sm:text-3xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 text-center md:text-left">
-            What We Do
-          </h2>
-
-          <p className="text-gray-500 leading-relaxed font-light text-xl pb-2 text-center md:text-left mb-4">
-            Save time managing advertising &amp; Content for your business.
-          </p>
-        </header>
-        {/* <!-- End heading --> */}
-        {/* <!-- row --> */}
-
-        <div className="flex flex-wrap flex-row mx-4 text-center ">
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-4 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold">
-                Web and Mobile Development
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200  transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                IT Consultancy
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                IT Support
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                AI &amp; Automation
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold whitespace-nowrap">
-                DevOps &amp; Cloud Computing
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-          <div
-            className="px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp overflow-hidden box-border "
-            data-wow-duration="1s"
-            style={{
-              visibility: "visible",
-              animationDuration: "1s",
-              animationName: "fadeInUp",
-            }}
-          >
-            <div className="py-8 px-12 mb-12 mx-2 md:mx-auto dark:bg-background bg-blue-50 border-b border-gray-200 transform transition duration-300 ease-in-out hover:-translate-y-2">
-              <div className="inline-block text-gray-900 mb-4"></div>
-              <h3 className="text-lg leading-normal mb-2 font-semibold ">
-                Data Analytics
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                This is a wider card with supporting text below as a natural
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
+    <section id="industries-services" className="py-12 px-4 lg:px-8">
+      {/* Header Section */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold tracking-tight">Industries and Services</h2>
+        <p className="text-lg text-muted-foreground mt-2">
+          Learn about the industries we serve and the services we offer.
+        </p>
       </div>
-    </div>
+
+      {/* Services Section */}
+      <div className="grid gap-8 lg:grid-cols-2">
+        <Card>
+          <CardHeader>
+            <CardTitle>Comprehensive IT Solutions</CardTitle>
+            <CardDescription>
+              Delivering solutions tailored to your industry.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              We provide IT solutions that address current market challenges in Finance, Agriculture, Health, and more.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Strategic Industry Focus</CardTitle>
+            <CardDescription>
+              Expertise in key industry verticals.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              Our expertise spans various industries such as Finance, Agriculture, Health, and others, ensuring solutions fit their unique needs.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Separator */}
+      <Separator className="my-12" />
+
+      {/* Industries Section */}
+      <div className="grid gap-8 lg:grid-cols-2">
+        {/* Finance */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Finance</CardTitle>
+            <CardDescription>Innovative IT solutions for the financial industry.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              We streamline financial operations with advanced technology, enabling growth and sustainability.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Agriculture */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Agriculture</CardTitle>
+            <CardDescription>Technology solutions for modern agriculture.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              We help optimize agricultural processes, increasing efficiency and reducing costs.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Health */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Health</CardTitle>
+            <CardDescription>Improving healthcare systems with technology.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              Our healthcare solutions enhance patient care, data management, and operational efficiency.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Custom Industry */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Custom Solutions</CardTitle>
+            <CardDescription>Tailored IT solutions for emerging industries.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>
+              We also offer custom IT solutions for industries that need personalized technology support.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
   );
 }
