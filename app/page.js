@@ -5,7 +5,7 @@ import Services from "./ui/services/Services";
 import About from "./ui/about/About";
 import Contact from "./ui/contact/Contact";
 import Footer from "./ui/footer/Footer";
-import Team from './ui/team/Team';
+import Team from "./ui/team/Team";
 
 export default function Home() {
   return (
@@ -17,19 +17,19 @@ export default function Home() {
       </div>
 
       <main className="flex flex-col w-full bg-primary-foreground">
-        <div className="flex flex-col">
+        <div className="flex flex-col  ">
           <About />
         </div>
         <div className="flex flex-col">
-          {/* <Services /> */}
+          <Services />
         </div>
         <div className="flex flex-col">
           <Team />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <Contact />
         </div>
-        <div className="flex ">
+        <div className="flex  ">
           <Footer />
         </div>
       </main>
