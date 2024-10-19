@@ -131,7 +131,7 @@ const TeamSlider = () => {
           <div className="w-full lg:w-2/5 flex flex-col">
             <div className="text-center lg:text-left">
               <h2 className="text-4xl font-bold text-gray-900 leading-snug mb-5">
-                <span className="dark:hidden">Meet our</span>
+                <span className="dark:text-white">Meet our </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700 lg:ml-2 lg:text-left text-center">Team</span>
               </h2>
               <p className="text-gray-500 leading-relaxed font-light text-xl pb-2 text-center md:text-left mb-4">
