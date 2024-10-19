@@ -21,7 +21,7 @@ export default function Home() {
           <About />
         </div>
         <div className="flex flex-col">
-          <Services />
+          {/* <Services /> */}
         </div>
         <div className="flex flex-col">
           <Team />
