@@ -106,12 +106,12 @@ export default function Footer() {
               </h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#about" className="text-muted-foreground">
                     About
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#team" className="text-muted-foreground">
                     Meet the Team
                   </Link>
                 </li>
