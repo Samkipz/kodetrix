@@ -95,27 +95,27 @@ export default function HeroSection() {
         tabIndex="-1"
       >
         <div 
-          className="mt-7 sm:max-w-lg sm:w-full m-3 sm:mx-auto max-h-[80vh] overflow-y-auto"
+          className="relative w-full max-w-lg mx-auto bg-white dark:bg-black rounded-lg shadow-lg overflow-hidden"
           onClick={e => e.stopPropagation()}
         >
-          <div className="bg-white border shadow-sm rounded-xl dark:bg-neutral-800 dark:border-neutral-700">
-            <div className="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
-              <h3 className="font-bold text-gray-800 dark:text-white">
-                Request a Quote
-              </h3>
-              <button 
-                type="button" 
-                className="size-8 inline-flex justify-center items-center rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200"
-                onClick={onClose}
-                aria-label="Close"
-              >
-                <svg className="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M18 6 6 18M6 6l12 12"/>
-                </svg>
-              </button>
-            </div>
-            
-            <form onSubmit={handleSubmit} className="p-4 space-y-6">
+          <div className="sticky top-0 z-10 flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700 bg-white dark:bg-black">
+            <h3 className="font-bold text-gray-800 dark:text-white">
+              Request a Quote
+            </h3>
+            <button 
+              type="button" 
+              className="size-8 inline-flex justify-center items-center rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-600"
+              onClick={onClose}
+              aria-label="Close"
+            >
+              <svg className="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 6 6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          
+          <form onSubmit={handleSubmit} className="p-4 space-y-6 flex flex-col h-[70vh] overflow-y-auto">
+            <div className="flex-grow space-y-6">
               {/* Personal Information */}
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-800 dark:text-white">Personal Information</h4>
@@ -131,7 +131,7 @@ export default function HeroSection() {
                   {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
                 </div>
               </div>
-  
+
               {/* Contact Information */}
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-800 dark:text-white">Contact Information</h4>
@@ -158,7 +158,7 @@ export default function HeroSection() {
                   {errors.phone && <p className="mt-1 text-sm text-red-500">{errors.phone}</p>}
                 </div>
               </div>
-  
+
               {/* Client Type */}
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-800 dark:text-white">Client Type</h4>
@@ -201,7 +201,7 @@ export default function HeroSection() {
                   </div>
                 )}
               </div>
-  
+
               {/* Service Selection */}
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-800 dark:text-white">Service Required *</h4>
@@ -218,7 +218,7 @@ export default function HeroSection() {
                 </select>
                 {errors.selectedService && <p className="mt-1 text-sm text-red-500">{errors.selectedService}</p>}
               </div>
-  
+
               {/* Project Description */}
               <div className="space-y-4">
                 <h4 className="font-semibold text-gray-800 dark:text-white">Project Description *</h4>
@@ -236,25 +236,26 @@ export default function HeroSection() {
                   <p className="mt-1 text-sm text-gray-500">{formData.description.length}/500 characters</p>
                 </div>
               </div>
-  
-              {/* Form Actions */}
-              <div className="flex justify-end gap-x-2 pt-4 border-t dark:border-neutral-700">
-                <button 
-                  type="button" 
-                  onClick={onClose}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
-                >
-                  Cancel
-                </button>
-                <button 
-                  type="submit"
-                  className="px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
-                >
-                  Submit Request
-                </button>
-              </div>
-            </form>
+              <div className="pb-20"></div>
+            </div>
+
+            {/* Form Actions */}
+            <div className="absolute bottom-0 left-0 right-0 z-10 flex justify-center gap-x-2 py-4 border-t dark:border-neutral-700 bg-white dark:bg-black">
+              <button 
+                type="button" 
+                onClick={onClose}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 dark:bg-neutral-800 dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700"
+              >
+                Cancel
+              </button>
+              <button 
+                type="submit"
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-700 border border-transparent rounded-md hover:bg-blue-700"
+              >
+                Submit Request
+              </button>
           </div>
+          </form>
         </div>
       </div>
     );

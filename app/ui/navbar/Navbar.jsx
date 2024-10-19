@@ -143,6 +143,27 @@ export default function Navbar() {
             ></span>
           </Link>
           <Link
+            href="#team"
+            className={clsx(
+              "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
+              {
+                "text-primary": hash === "#team",
+              }
+            )}
+            onClick={() => handleScroll("#team")}
+          >
+            Team
+            <span
+              className={clsx(
+                "absolute left-[-10px] bottom-0 h-1 w-full bg-primary origin-left transition-transform duration-300",
+                {
+                  "scale-x-125": hash === "#team",
+                  "scale-x-0 group-hover:scale-x-125": hash !== "#team",
+                }
+              )}
+            ></span>
+          </Link>
+          <Link
             href="#contact"
             className={clsx(
               "relative group font-medium text-foreground transition-colors hover:text-primary duration-300 pb-2 pr-2",
