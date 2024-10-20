@@ -158,7 +158,7 @@ export default function Services() {
               },
             ].map((service, index) => (
               <Dialog key={index}>
-                <DialogTrigger className="p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <DialogTrigger className="p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out dark:bg-background">
                   <div className="py-2 px-2 ">
                     <div className="flex flex-col items-center justify-center mb-4 ">
                       {service.icon}
