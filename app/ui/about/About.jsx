@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
   Check,
+  CircleChevronRight,
   Headset,
   NotebookTabs,
   SquareCheckBig,
@@ -66,15 +67,15 @@ export default function CompanyAboutSlider() {
   return (
     <section
       id="about"
-      className="flex flex-col md:justify-center md:items-center xl:justify-start py-2 w-full  scroll-mt-20 scroll-smooth min-h-[90vh] "
+      className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full min-h-[70vh]"
     >
-      <div className="container xl:max-w-6xl mx-auto ">
+      <div className="container xl:max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
           Who We Are
         </h2>
-        <div className="flex flex-col gap-2 md:flex-row w-full ">
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Left Section */}
-          <div className="w-full md:w-1/2 py-4 flex flex-col justify-center items-center ">
+          <div className="w-full md:w-1/2 flex flex-col justify-center">
             <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
               Kodetrix is a forward-thinking technology firm, licensed to
               deliver innovative IT solutions tailored to solve modern
@@ -86,23 +87,48 @@ export default function CompanyAboutSlider() {
             </p>
           </div>
 
-          {/* Right Section with Carousel */}
-          {/*  */}
+          {/* Right Section (Why Us) */}
+          <div className="w-full md:w-1/2">
+            <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left whitespace-nowrap pb-2">
+              Why Us
+            </h2>
+            <ul className="list-none space-y-4">
+              <li className="flex items-start">
+                <span className="mr-3 text-blue-500">
+                  <CircleChevronRight size={24} />
+                </span>
+                <p className="text-lg">
+                  A diverse team of experts offering unparalleled support.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 text-blue-500">
+                  <CircleChevronRight size={24} />
+                </span>
+                <p className="text-lg ">
+                  Extensive experience from a variety of industries.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 text-blue-500">
+                  <CircleChevronRight size={24} />
+                </span>
+                <p className="text-lg ">
+                  Cutting-edge technology tailored to your specific needs.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 text-blue-500">
+                  <CircleChevronRight size={24} />
+                </span>
+                <p className="text-lg ">
+                  One-stop digital solutions for maximum efficiency and impact.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function FeatureCard({ icon, title, description }) {
-  return (
-    <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
-      <div className="flex justify-center md:justify-normal mb-2">{icon}</div>
-      <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-      <Link href="#" className="text-teal-500 mt-2 hover:underline">
-        Learn More
-      </Link>
-    </div>
   );
 }

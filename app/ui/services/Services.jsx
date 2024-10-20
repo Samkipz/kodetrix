@@ -125,8 +125,6 @@ export default function Services() {
                 title: "Web & Mobile Development",
                 description:
                   "Building modern, responsive web and mobile applications tailored to your business needs.",
-                details:
-                  "At Kodetrix, we offer expertise in web and mobile development, including front-end and back-end development, UI/UX design, and testing.",
               },
               {
                 icon: <FileCheck2 size={45} />,
@@ -178,7 +176,7 @@ export default function Services() {
                   </details> */}
                   </div>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
+                <DialogContent className="sm:max-w-[425px] md:max-w-2xl lg:max-w-6xl border rounded-lg">
                   <DialogHeader>
                     <DialogTitle>{service.title}</DialogTitle>
                     <DialogDescription>{service.description}</DialogDescription>
