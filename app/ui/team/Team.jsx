@@ -144,8 +144,8 @@ const TeamSlider = () => {
             <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
               {team.map((member) => (
                 <div key={member.id} className="p-2">
-                  <div className="bg-white rounded-lg shadow-lg text-center w-full h-96 mx-auto flex flex-col justify-between items-center dark:bg-background">
-                    <div className="w-full h-1/2 flex justify-center items-center overflow-hidden rounded-t-lg ">
+                  <div className="bg-white rounded-lg shadow-lg text-center w-full h-64 flex flex-col justify-between items-center dark:bg-background">
+                    <div className="w-full h-4/5 flex justify-center items-center overflow-hidden rounded-t-lg ">
                       <img
                         src={member.image}
                         alt={member.name}
