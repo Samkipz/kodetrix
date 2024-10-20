@@ -67,7 +67,7 @@ export default function CompanyAboutSlider() {
   return (
     <section
       id="about"
-      className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full min-h-[70vh]"
+      className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full  scroll-mt-20 scroll-smooth min-h-[70vh]"
     >
       <div className="container xl:max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
