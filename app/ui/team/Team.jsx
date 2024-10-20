@@ -126,7 +126,7 @@ const TeamSlider = () => {
     <section
     id="team"
     className="flex flex-col justify-center items-center py-2 w-full scroll-mt-20 scroll-smooth min-h-[90vh]">
-      <div className="container xl:max-w-6xl mx-auto ">
+      <div className="container xl:max-w-6xl mx-auto">
         <div className="flex justify-center flex-wrap lg:flex-nowrap gap-8">
           <div className="w-full lg:w-2/5 flex flex-col">
             <div className="text-center lg:text-left">

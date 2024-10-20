@@ -236,6 +236,14 @@ export default function Navbar() {
               </SheetClose>
               <SheetClose asChild>
                 <Link
+                  href="#team"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Team
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link
                   href="#contact"
                   className="text-muted-foreground hover:text-foreground"
                 >
