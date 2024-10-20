@@ -24,7 +24,7 @@ export default function Home() {
           <Services />
         </div>
         <div className="flex flex-col">
-          {/* <Team /> */}
+          <Team />
         </div>
         <div className="flex flex-col ">
           <Contact />
