@@ -138,14 +138,9 @@ const TeamSlider = () => {
                 Learn more about the talented individuals behind our company.
               </p>
             </div>
-            {/* Arrow Container */}
-            <div className="flex justify-center lg:justify-start mt-4 space-x-4">
-              <PrevArrow onClick={() => sliderRef.slickPrev()} />
-              <NextArrow onClick={() => sliderRef.slickNext()} />
-            </div>
           </div>
-
-          <div className="w-full lg:w-3/5 overflow-hidden">
+        <div className="w-full lg:w-3/4 overflow-hidden flex flex-col items-end">
+          <div className="w-full lg:w-4/5 overflow-hidden">
             <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
               {team.map((member) => (
                 <div key={member.id} className="p-2">
@@ -169,7 +164,13 @@ const TeamSlider = () => {
               ))}
             </Slider>
           </div>
+          {/* Arrow Container */}
+          <div className="flex w-full lg:w-4/5 justify-center mt-4 space-x-4">
+              <PrevArrow onClick={() => sliderRef.slickPrev()} />
+              <NextArrow onClick={() => sliderRef.slickNext()} />
+          </div>
         </div>
+      </div>
       </div>
     </section>
   );
