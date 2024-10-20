@@ -119,7 +119,22 @@ export default function Contact() {
                           Accept terms and conditions
                         </Label>
                       </div>
-                      <Button className="mt-3 col-span-2">Submit</Button>
+
+                      <Button
+                        variant="outline"
+                        className="mt-3 col-span-2 relative h-12 md:h-15 overflow-hidden rounded-lg bg-gradient-to-r from-purple-500 via-blue-500 to-teal-500 text-white dark:text-gray-100 font-bold text-sm md:text-lg lg:text-xl tracking-wide transition-transform duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-40 dark:focus:ring-opacity-60 shadow-lg group"
+                      >
+                        {/* Arrow hover effect layer */}
+                        <span className="absolute top-1/2 h-0 w-64 origin-center -translate-x-20 rotate-45 bg-gradient-to-r from-blue-400 to-blue-700 dark:from-teal-400 dark:to-purple-600 transition-all duration-300 group-hover:h-32 group-hover:-translate-y-20 opacity-50"></span>
+
+                        {/* Background layer for hover */}
+                        <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-700 dark:from-teal-500 dark:to-purple-600 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-90 group-hover:animate-none"></span>
+
+                        {/* Inner content */}
+                        <span className="relative z-10 text-white dark:text-gray-200 transition-colors duration-300 ease-in-out group-hover:text-white">
+                          Submit
+                        </span>
+                      </Button>
                     </div>
                     {/* Grid End */}
                   </div>

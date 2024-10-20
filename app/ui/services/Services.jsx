@@ -34,7 +34,7 @@ export default function Services() {
   const settings = {
     arrows: false,
     autoplay: true,
-    speed: 3000,
+    speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
     dots: false,
@@ -65,7 +65,6 @@ export default function Services() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 2000,
         },
       },
     ],

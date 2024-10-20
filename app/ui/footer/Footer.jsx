@@ -133,22 +133,22 @@ export default function Footer() {
               </h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Custom Software Development
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     AI & Machine Learning Solutions
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Data Analytics & Business Intelligence
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Networking Solutions and Services
                   </Link>
                 </li>
@@ -160,37 +160,37 @@ export default function Footer() {
               </h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Healthcare
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Education
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Agriculture
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Banking
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Enterprise Solution
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     FinTech
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#services" className="text-muted-foreground">
                     Smart Cities and IoT
                   </Link>
                 </li>
@@ -202,18 +202,26 @@ export default function Footer() {
               </h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#contact" className="text-muted-foreground">
                     Send a Message
                   </Link>
                 </li>
                 <li className="mt-3">
-                  <Link href="#" className="text-muted-foreground">
+                  <Link href="#hero" className="text-muted-foreground">
                     Request a Quote
                   </Link>
                 </li>
                 <li className="mt-3">
                   <Link href="#" className="text-muted-foreground">
                     +123-456-7890
+                  </Link>
+                </li>
+                <li className="mt-3">
+                  <Link
+                    href="mailto:support@kodetrix.com"
+                    className="text-muted-foreground"
+                  >
+                    support@kodetrix.com
                   </Link>
                 </li>
               </nav>
