@@ -1,25 +1,23 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { Check, CircleChevronRight, Users, ChevronDown } from "lucide-react";
-import Image from "next/image";
+import {
+  Check,
+  CircleChevronRight,
+  Headset,
+  NotebookTabs,
+  SquareCheckBig,
+  Users,
+  ChevronDown,
+} from "lucide-react";
 import Link from "next/link";
 
-const Header = ({ avatarUrl, title, subtitle }) => {
+const Header = ({ title, subtitle }) => {
   return (
-    <div className="flex items-start gap-3">
-      <Image
-        src={avatarUrl}
-        alt={title}
-        width={40}
-        height={40}
-        className="w-10 h-10 rounded-full"
-      />
-      <div className="flex flex-col items-start gap-1">
-        <div className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
-          {title}
-        </div>
-        <div className="text-gray-500 text-sm dark:text-white">{subtitle}</div>
+    <div className="flex flex-col items-start gap-1">
+      <div className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
+        {title}
       </div>
+      <div className="text-gray-500 text-sm dark:text-white">{subtitle}</div>
     </div>
   );
 };
@@ -53,32 +51,26 @@ const AccordionItem = ({ header, children, isOpen, onClick }) => {
 
 export default function CompanyAboutSlider() {
   const [activeKey, setActiveKey] = useState(1);
-  const [currentSection, setCurrentSection] = useState("");
+  const [currentSection, setCurrentSection] = useState('');
   const sectionRef = useRef(null);
 
   const items = [
     {
       key: 1,
       header: {
-        avatarUrl: "/expertise_icon.png",
         title: "Technical Excellence",
-        subtitle: "Industry-leading expertise and proven track record",
+        subtitle: "Industry-leading expertise and proven track record"
       },
       content: (
         <>
           <p>
-            Our team combines deep technical knowledge with years of practical
-            experience in delivering innovative solutions.
+            Our team combines deep technical knowledge with years of practical experience in delivering innovative solutions.
           </p>
           <p className="mt-4">
-            <strong>Expert Team:</strong> Our developers and consultants are
-            certified professionals in React, Next.js, Flutter, and other
-            cutting-edge technologies, ensuring top-quality deliverables for
-            every project.
+            <strong>Expert Team:</strong> Our developers and consultants are certified professionals in React, Next.js, Flutter, and other cutting-edge technologies, ensuring top-quality deliverables for every project.
           </p>
           <p className="mt-4">
-            <strong>Proven Methodology:</strong> We follow industry best
-            practices and modern development approaches, including:
+            <strong>Proven Methodology:</strong> We follow industry best practices and modern development approaches, including:
             <ul className="list-disc ml-6 mt-2">
               <li>Agile development methodology</li>
               <li>Test-driven development</li>
@@ -87,29 +79,24 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      ),
+      )
     },
     {
       key: 2,
       header: {
-        avatarUrl: "/customer_focus_icon.png",
         title: "Client-Centric Approach",
-        subtitle: "Your success is our priority",
+        subtitle: "Your success is our priority"
       },
       content: (
         <>
           <p>
-            We believe in building lasting partnerships with our clients through
-            transparent communication and dedicated support.
+            We believe in building lasting partnerships with our clients through transparent communication and dedicated support.
           </p>
           <p className="mt-4">
-            <strong>Collaborative Partnership:</strong> We work closely with you
-            to understand your unique needs and challenges, ensuring solutions
-            that perfectly align with your business objectives.
+            <strong>Collaborative Partnership:</strong> We work closely with you to understand your unique needs and challenges, ensuring solutions that perfectly align with your business objectives.
           </p>
           <p className="mt-4">
-            <strong>Dedicated Support:</strong> Our commitment to your success
-            includes:
+            <strong>Dedicated Support:</strong> Our commitment to your success includes:
             <ul className="list-disc ml-6 mt-2">
               <li>24/7 technical support</li>
               <li>Regular progress updates</li>
@@ -118,53 +105,41 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      ),
+      )
     },
     {
       key: 3,
       header: {
-        avatarUrl: "/innovation_icon.png",
         title: "Innovation & Adaptability",
-        subtitle: "Staying ahead of technology trends",
+        subtitle: "Staying ahead of technology trends"
       },
       content: (
         <>
           <p>
-            We consistently invest in emerging technologies and innovative
-            solutions to keep your business ahead of the curve.
+            We consistently invest in emerging technologies and innovative solutions to keep your business ahead of the curve.
           </p>
           <p className="mt-4">
-            <strong>Future-Ready Solutions:</strong> Our focus on innovation
-            ensures that your solutions are not just meeting today&apos;s needs but
-            are prepared for tomorrow&apos;s challenges. We regularly upgrade our
-            skills and toolsets to incorporate the latest technological
-            advancements and industry best practices.
+            <strong>Future-Ready Solutions:</strong> Our focus on innovation ensures that your solutions are not just meeting today's needs but are prepared for tomorrow's challenges. We regularly upgrade our skills and toolsets to incorporate the latest technological advancements and industry best practices.
           </p>
           <p className="mt-4">
-            <strong>Flexible & Scalable:</strong> Our solutions are designed to
-            grow with your business, providing the flexibility to adapt to
-            changing market conditions and business requirements.
+            <strong>Flexible & Scalable:</strong> Our solutions are designed to grow with your business, providing the flexibility to adapt to changing market conditions and business requirements.
           </p>
         </>
-      ),
+      )
     },
     {
       key: 4,
       header: {
-        avatarUrl: "/value_icon.png",
         title: "Value-Driven Results",
-        subtitle: "Maximizing return on your technology investment",
+        subtitle: "Maximizing return on your technology investment"
       },
       content: (
         <>
           <p>
-            We deliver tangible business value through cost-effective solutions
-            and measurable outcomes.
+            We deliver tangible business value through cost-effective solutions and measurable outcomes.
           </p>
           <p className="mt-4">
-            <strong>Cost-Effective Solutions:</strong> Our efficient development
-            processes and resource optimization help minimize costs while
-            maintaining high quality standards.
+            <strong>Cost-Effective Solutions:</strong> Our efficient development processes and resource optimization help minimize costs while maintaining high quality standards.
           </p>
           <p className="mt-4">
             <strong>Measurable Impact:</strong> We focus on delivering:
@@ -177,8 +152,8 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      ),
-    },
+      )
+    }
   ];
 
   useEffect(() => {
@@ -192,7 +167,7 @@ export default function CompanyAboutSlider() {
       },
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 0.5, // Adjust this value as needed
       }
     );
@@ -238,7 +213,7 @@ export default function CompanyAboutSlider() {
               <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
                 Why Us
               </h2>
-            </div>
+            </div>  
             <div className="border border-gray-300 rounded-lg p-2 dark:bg-black max-h-96 overflow-y-auto">
               {items.map((item) => (
                 <AccordionItem
