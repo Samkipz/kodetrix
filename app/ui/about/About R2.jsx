@@ -203,7 +203,7 @@ export default function CompanyAboutSlider() {
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           {/* Left Section */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
+          <div className="w-full md:w-1/2 flex flex-col justify-center max-h-96 overflow-y-auto border-2 border-red-400">
             <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
               Kodetrix is a forward-thinking technology firm, licensed to
               deliver innovative IT solutions tailored to solve modern
@@ -216,7 +216,7 @@ export default function CompanyAboutSlider() {
           </div>
 
           {/* Right Section (Why Us) */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 border-2 border-red-400 p-2">
               <div className="border border-gray-300 rounded-lg p-2 dark:bg-black">
                 {items.map((item) => (
                   <AccordionItem
