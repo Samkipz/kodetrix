@@ -88,7 +88,7 @@ export default function CompanyAboutSlider() {
           </div>
 
           {/* Right Section (Why Us) */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 border-2 border-red-400">
             <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left whitespace-nowrap pb-2">
               Why Us
             </h2>

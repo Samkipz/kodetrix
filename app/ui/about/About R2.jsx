@@ -195,13 +195,13 @@ export default function CompanyAboutSlider() {
   return (
     <section
       id="about"
-      className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full  scroll-mt-20 scroll-smooth min-h-[70vh]"
+      className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full  scroll-mt-20 scroll-smooth min-h-[70vh] "
     >
-      <div className="container xl:max-w-6xl mx-auto">
+      <div className="container xl:max-w-6xl mx-auto ">
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
           Who We Are
         </h2>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-8 ">
           {/* Left Section */}
           <div className="w-full md:w-1/2 flex flex-col justify-center max-h-96 overflow-y-auto">
             <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
@@ -216,7 +216,12 @@ export default function CompanyAboutSlider() {
           </div>
 
           {/* Right Section (Why Us) */}
-          <div className="w-full md:w-1/2 p-2">
+          <div className="w-full md:w-1/2 p-2 ">
+          <div className="w-full p-2 ">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
+              Why Us
+            </h2>
+          </div>  
               <div className="border border-gray-300 rounded-lg p-2 dark:bg-black">
                 {items.map((item) => (
                   <AccordionItem
