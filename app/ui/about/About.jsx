@@ -3,8 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   Check,
   CircleChevronRight,
-  Headset,
-  NotebookTabs,
   SquareCheckBig,
   Users,
 } from "lucide-react";
