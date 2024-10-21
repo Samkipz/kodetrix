@@ -21,8 +21,8 @@ const Header = ({ avatarUrl, title, subtitle }) => {
         className="w-10 h-10 rounded-full"
       />
       <div className="flex flex-col items-start gap-1">
-        <div className="font-medium">{title}</div>
-        <div className="text-gray-500 text-sm">{subtitle}</div>
+        <div className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">{title}</div>
+        <div className="text-gray-500 text-sm dark:text-white">{subtitle}</div>
       </div>
     </div>
   );
@@ -30,10 +30,10 @@ const Header = ({ avatarUrl, title, subtitle }) => {
 
 const AccordionItem = ({ header, children, isOpen, onClick }) => {
   return (
-    <div className="border rounded-lg mb-2 overflow-hidden">
+    <div className="border rounded-lg mb-2 overflow-hidden dark:bg-black">
       <button
         onClick={onClick}
-        className="w-full p-4 flex items-center justify-between bg-white hover:bg-gray-50"
+        className="w-full p-4 flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-black dark:text-white"
       >
         {header}
         <ChevronDown 
@@ -47,7 +47,7 @@ const AccordionItem = ({ header, children, isOpen, onClick }) => {
           isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="p-4 bg-white text-left">{children}</div>
+        <div className="p-4 bg-white text-left dark:bg-black dark:text-white">{children}</div>
       </div>
     </div>
   );
@@ -62,23 +62,26 @@ export default function CompanyAboutSlider() {
     {
       key: 1,
       header: {
-        avatarUrl: "/application_10382731.png",
-        title: "Custom Software Development",
-        subtitle: "Transforming ideas into powerful digital solutions"
+        avatarUrl: "/expertise_icon.png",
+        title: "Technical Excellence",
+        subtitle: "Industry-leading expertise and proven track record"
       },
       content: (
         <>
           <p>
-            At Kodetrix, we craft bespoke software solutions that drive business growth and innovation.
+            Our team combines deep technical knowledge with years of practical experience in delivering innovative solutions.
           </p>
           <p className="mt-4">
-            <strong>Web & Mobile Excellence:</strong> Our expert team specializes in developing cutting-edge applications using React, Next.js, and Flutter frameworks. We deliver responsive, scalable, and user-centric solutions that work seamlessly across all platforms and devices.
+            <strong>Expert Team:</strong> Our developers and consultants are certified professionals in React, Next.js, Flutter, and other cutting-edge technologies, ensuring top-quality deliverables for every project.
           </p>
           <p className="mt-4">
-            <strong>Future-Ready Development:</strong> We employ industry best practices and modern architecture patterns to ensure your software is not just functional today but ready for tomorrow's challenges. From progressive web apps to native mobile applications, we build solutions that stand the test of time.
-          </p>
-          <p className="mt-4">
-            <strong>End-to-End Solutions:</strong> Our development process encompasses everything from initial concept and design to deployment and maintenance, ensuring a comprehensive solution that aligns perfectly with your business objectives.
+            <strong>Proven Methodology:</strong> We follow industry best practices and modern development approaches, including:
+            <ul className="list-disc ml-6 mt-2">
+              <li>Agile development methodology</li>
+              <li>Test-driven development</li>
+              <li>Continuous integration and deployment</li>
+              <li>Regular code reviews and quality assurance</li>
+            </ul>
           </p>
         </>
       )
@@ -86,29 +89,26 @@ export default function CompanyAboutSlider() {
     {
       key: 2,
       header: {
-        avatarUrl: "/economy_10382474.png",
-        title: "IT Consultancy & Procurement",
-        subtitle: "Strategic technology guidance and trusted procurement solutions"
+        avatarUrl: "/customer_focus_icon.png",
+        title: "Client-Centric Approach",
+        subtitle: "Your success is our priority"
       },
       content: (
         <>
           <p>
-            Leverage our extensive expertise to navigate the complex technology landscape and make informed IT decisions.
+            We believe in building lasting partnerships with our clients through transparent communication and dedicated support.
           </p>
           <p className="mt-4">
-            <strong>Comprehensive Consulting:</strong> Our consultancy services cover:
+            <strong>Collaborative Partnership:</strong> We work closely with you to understand your unique needs and challenges, ensuring solutions that perfectly align with your business objectives.
+          </p>
+          <p className="mt-4">
+            <strong>Dedicated Support:</strong> Our commitment to your success includes:
             <ul className="list-disc ml-6 mt-2">
-              <li>Network Architecture & DataComm Solutions</li>
-              <li>Business Technology Strategy</li>
-              <li>Digital Transformation Roadmaps</li>
-              <li>Cybersecurity Assessment & Planning</li>
-              <li>Enterprise Architecture Design</li>
-              <li>Technology Stack Optimization</li>
-              <li>IT Governance & Compliance</li>
+              <li>24/7 technical support</li>
+              <li>Regular progress updates</li>
+              <li>Transparent project management</li>
+              <li>Post-deployment maintenance and optimization</li>
             </ul>
-          </p>
-          <p className="mt-4">
-            <strong>Procurement Excellence:</strong> Our procurement services include vendor evaluation, technology assessment, cost optimization, and direct procurement facilitation through our network of trusted partners, ensuring you get the best value for your technology investments.
           </p>
         </>
       )
@@ -116,43 +116,48 @@ export default function CompanyAboutSlider() {
     {
       key: 3,
       header: {
-        avatarUrl: "/cognitive_10382753.png",
-        title: "Data Analytics & Business Intelligence",
-        subtitle: "Transform your data into actionable insights"
+        avatarUrl: "/innovation_icon.png",
+        title: "Innovation & Adaptability",
+        subtitle: "Staying ahead of technology trends"
       },
       content: (
-        <p>
-          Unlock the power of your data with our comprehensive analytics solutions. We help organizations harness their data through advanced analytics, visualization, and reporting tools. Our services include data warehouse design, ETL pipeline development, predictive analytics, and custom dashboard creation. We employ cutting-edge technologies and methodologies to deliver insights that drive strategic decision-making and business growth.
-        </p>
+        <>
+          <p>
+            We consistently invest in emerging technologies and innovative solutions to keep your business ahead of the curve.
+          </p>
+          <p className="mt-4">
+            <strong>Future-Ready Solutions:</strong> Our focus on innovation ensures that your solutions are not just meeting today's needs but are prepared for tomorrow's challenges. We regularly upgrade our skills and toolsets to incorporate the latest technological advancements and industry best practices.
+          </p>
+          <p className="mt-4">
+            <strong>Flexible & Scalable:</strong> Our solutions are designed to grow with your business, providing the flexibility to adapt to changing market conditions and business requirements.
+          </p>
+        </>
       )
     },
     {
       key: 4,
       header: {
-        avatarUrl: "/cloud-computing_10382559.png",
-        title: "Managed IT Services",
-        subtitle: "Comprehensive IT support and automation solutions"
+        avatarUrl: "/value_icon.png",
+        title: "Value-Driven Results",
+        subtitle: "Maximizing return on your technology investment"
       },
       content: (
         <>
           <p>
-            Experience worry-free IT operations with our managed services portfolio.
+            We deliver tangible business value through cost-effective solutions and measurable outcomes.
           </p>
           <p className="mt-4">
-            <strong>IT Support Excellence:</strong> 24/7 technical support, system monitoring, maintenance, and rapid incident resolution to keep your business running smoothly.
+            <strong>Cost-Effective Solutions:</strong> Our efficient development processes and resource optimization help minimize costs while maintaining high quality standards.
           </p>
           <p className="mt-4">
-            <strong>Automation & DevOps:</strong> Streamline your operations with:
+            <strong>Measurable Impact:</strong> We focus on delivering:
             <ul className="list-disc ml-6 mt-2">
-              <li>CI/CD Pipeline Implementation</li>
-              <li>Infrastructure as Code (IaC)</li>
-              <li>Container Orchestration</li>
-              <li>Automated Testing & Deployment</li>
-              <li>Performance Monitoring & Optimization</li>
+              <li>Improved operational efficiency</li>
+              <li>Reduced time-to-market</li>
+              <li>Enhanced user experience</li>
+              <li>Increased ROI on technology investments</li>
+              <li>Scalable and maintainable solutions</li>
             </ul>
-          </p>
-          <p className="mt-4">
-            <strong>Coming Soon - Cloud Services:</strong> Comprehensive cloud solutions leveraging AWS and Azure platforms for scalable, secure, and efficient cloud infrastructure management.
           </p>
         </>
       )
@@ -212,7 +217,7 @@ export default function CompanyAboutSlider() {
 
           {/* Right Section (Why Us) */}
           <div className="w-full md:w-1/2">
-              <div className="border border-gray-300 rounded-lg p-2">
+              <div className="border border-gray-300 rounded-lg p-2 dark:bg-black">
                 {items.map((item) => (
                   <AccordionItem
                     key={item.key}
