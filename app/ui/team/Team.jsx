@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const NextArrow = (props) => {
   const { onClick } = props;
@@ -76,28 +77,28 @@ const TeamSlider = () => {
   const team = [
     {
       id: 1,
-      image: "https://example.com/member1.png",
+      image: "/SCL08489.jpg",
       name: "John Doe",
       position: "CEO",
       bio: "John is a visionary leader with a passion for innovation and growth...",
     },
     {
       id: 2,
-      image: "https://example.com/member2.png",
+      image: "/SCL08489.jpg",
       name: "Jane Smith",
       position: "CTO",
       bio: "Jane specializes in technology strategy and software engineering...",
     },
     {
       id: 3,
-      image: "https://example.com/member3.png",
+      image: "/SCL08489.jpg",
       name: "Emily Johnson",
       position: "Marketing Lead",
       bio: "Emily has a strong background in digital marketing and brand development...",
     },
     {
       id: 4,
-      image: "https://example.com/member4.png",
+      image: "/SCL08489.jpg",
       name: "Michael Brown",
       position: "Lead Developer",
       bio: "Michael leads the development team, focusing on cutting-edge technologies...",
@@ -144,20 +145,22 @@ const TeamSlider = () => {
             <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
               {team.map((member) => (
                 <div key={member.id} className="p-2">
-                  <div className="bg-white rounded-lg shadow-lg text-center w-full h-64 flex flex-col justify-between items-center dark:bg-background">
+                  <div className="bg-white rounded-lg shadow-lg text-center w-full h-96 flex flex-col justify-between items-center dark:bg-background">
                     <div className="w-full h-4/5 flex justify-center items-center overflow-hidden rounded-t-lg ">
-                      <img
+                      <Image
+                        width="200"
+                        height="200"
                         src={member.image}
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="flex-grow flex flex-col justify-center items-center p-6">
+                    <div className="flex-grow flex flex-col justify-center items-center p-2">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                         {member.name}
                       </h3>
                       <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">{member.position}</p>
-                      <p className="text-gray-500 dark:text-gray-400">{member.bio}</p>
+                      {/* <p className="text-gray-500 dark:text-gray-400">{member.bio}</p> */}
                     </div>
                   </div>
                 </div>

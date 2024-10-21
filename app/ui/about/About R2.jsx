@@ -17,7 +17,7 @@ const Header = ({ title, subtitle }) => {
       <div className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
         {title}
       </div>
-      <div className="text-gray-500 text-sm dark:text-white">{subtitle}</div>
+      <div className="text-gray-500 text-sm dark:text-white text-left">{subtitle}</div>
     </div>
   );
 };
@@ -73,7 +73,7 @@ export default function CompanyAboutSlider() {
             cutting-edge technologies, ensuring top-quality deliverables for
             every project.
           </p>
-          <p className="mt-4">
+          <div className="mt-4">
             <strong>Proven Methodology:</strong> We follow industry best
             practices and modern development approaches, including:
             <ul className="list-disc ml-6 mt-2">
@@ -82,7 +82,7 @@ export default function CompanyAboutSlider() {
               <li>Continuous integration and deployment</li>
               <li>Regular code reviews and quality assurance</li>
             </ul>
-          </p>
+          </div>
         </>
       ),
     },
@@ -103,7 +103,7 @@ export default function CompanyAboutSlider() {
             to understand your unique needs and challenges, ensuring solutions
             that perfectly align with your business objectives.
           </p>
-          <p className="mt-4">
+          <div className="mt-4">
             <strong>Dedicated Support:</strong> Our commitment to your success
             includes:
             <ul className="list-disc ml-6 mt-2">
@@ -112,7 +112,7 @@ export default function CompanyAboutSlider() {
               <li>Transparent project management</li>
               <li>Post-deployment maintenance and optimization</li>
             </ul>
-          </p>
+          </div>
         </>
       ),
     },
@@ -160,7 +160,7 @@ export default function CompanyAboutSlider() {
             processes and resource optimization help minimize costs while
             maintaining high quality standards.
           </p>
-          <p className="mt-4">
+          <div className="mt-4">
             <strong>Measurable Impact:</strong> We focus on delivering:
             <ul className="list-disc ml-6 mt-2">
               <li>Improved operational efficiency</li>
@@ -169,7 +169,7 @@ export default function CompanyAboutSlider() {
               <li>Increased ROI on technology investments</li>
               <li>Scalable and maintainable solutions</li>
             </ul>
-          </p>
+          </div>
         </>
       ),
     },
