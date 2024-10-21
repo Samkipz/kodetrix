@@ -135,8 +135,8 @@ export default function CompanyAboutSlider() {
           </p>
           <p className="mt-4">
             <strong>Future-Ready Solutions:</strong> Our focus on innovation
-            ensures that your solutions are not just meeting today's needs but
-            are prepared for tomorrow's challenges. We regularly upgrade our
+            ensures that your solutions are not just meeting today&apos;s needs but
+            are prepared for tomorrow&apos;s challenges. We regularly upgrade our
             skills and toolsets to incorporate the latest technological
             advancements and industry best practices.
           </p>
