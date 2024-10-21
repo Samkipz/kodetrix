@@ -51,7 +51,7 @@ const AccordionItem = ({ header, children, isOpen, onClick }) => {
 
 export default function CompanyAboutSlider() {
   const [activeKey, setActiveKey] = useState(1);
-  const [currentSection, setCurrentSection] = useState('');
+  const [currentSection, setCurrentSection] = useState("");
   const sectionRef = useRef(null);
 
   const items = [
@@ -59,18 +59,23 @@ export default function CompanyAboutSlider() {
       key: 1,
       header: {
         title: "Technical Excellence",
-        subtitle: "Industry-leading expertise and proven track record"
+        subtitle: "Industry-leading expertise and proven track record",
       },
       content: (
         <>
           <p>
-            Our team combines deep technical knowledge with years of practical experience in delivering innovative solutions.
+            Our team combines deep technical knowledge with years of practical
+            experience in delivering innovative solutions.
           </p>
           <p className="mt-4">
-            <strong>Expert Team:</strong> Our developers and consultants are certified professionals in React, Next.js, Flutter, and other cutting-edge technologies, ensuring top-quality deliverables for every project.
+            <strong>Expert Team:</strong> Our developers and consultants are
+            certified professionals in React, Next.js, Flutter, and other
+            cutting-edge technologies, ensuring top-quality deliverables for
+            every project.
           </p>
           <p className="mt-4">
-            <strong>Proven Methodology:</strong> We follow industry best practices and modern development approaches, including:
+            <strong>Proven Methodology:</strong> We follow industry best
+            practices and modern development approaches, including:
             <ul className="list-disc ml-6 mt-2">
               <li>Agile development methodology</li>
               <li>Test-driven development</li>
@@ -79,24 +84,28 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      )
+      ),
     },
     {
       key: 2,
       header: {
         title: "Client-Centric Approach",
-        subtitle: "Your success is our priority"
+        subtitle: "Your success is our priority",
       },
       content: (
         <>
           <p>
-            We believe in building lasting partnerships with our clients through transparent communication and dedicated support.
+            We believe in building lasting partnerships with our clients through
+            transparent communication and dedicated support.
           </p>
           <p className="mt-4">
-            <strong>Collaborative Partnership:</strong> We work closely with you to understand your unique needs and challenges, ensuring solutions that perfectly align with your business objectives.
+            <strong>Collaborative Partnership:</strong> We work closely with you
+            to understand your unique needs and challenges, ensuring solutions
+            that perfectly align with your business objectives.
           </p>
           <p className="mt-4">
-            <strong>Dedicated Support:</strong> Our commitment to your success includes:
+            <strong>Dedicated Support:</strong> Our commitment to your success
+            includes:
             <ul className="list-disc ml-6 mt-2">
               <li>24/7 technical support</li>
               <li>Regular progress updates</li>
@@ -105,41 +114,51 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      )
+      ),
     },
     {
       key: 3,
       header: {
         title: "Innovation & Adaptability",
-        subtitle: "Staying ahead of technology trends"
+        subtitle: "Staying ahead of technology trends",
       },
       content: (
         <>
           <p>
-            We consistently invest in emerging technologies and innovative solutions to keep your business ahead of the curve.
+            We consistently invest in emerging technologies and innovative
+            solutions to keep your business ahead of the curve.
           </p>
           <p className="mt-4">
-            <strong>Future-Ready Solutions:</strong> Our focus on innovation ensures that your solutions are not just meeting today's needs but are prepared for tomorrow's challenges. We regularly upgrade our skills and toolsets to incorporate the latest technological advancements and industry best practices.
+            <strong>Future-Ready Solutions:</strong> Our focus on innovation
+            ensures that your solutions are not just meeting today's needs but
+            are prepared for tomorrow's challenges. We regularly upgrade our
+            skills and toolsets to incorporate the latest technological
+            advancements and industry best practices.
           </p>
           <p className="mt-4">
-            <strong>Flexible & Scalable:</strong> Our solutions are designed to grow with your business, providing the flexibility to adapt to changing market conditions and business requirements.
+            <strong>Flexible & Scalable:</strong> Our solutions are designed to
+            grow with your business, providing the flexibility to adapt to
+            changing market conditions and business requirements.
           </p>
         </>
-      )
+      ),
     },
     {
       key: 4,
       header: {
         title: "Value-Driven Results",
-        subtitle: "Maximizing return on your technology investment"
+        subtitle: "Maximizing return on your technology investment",
       },
       content: (
         <>
           <p>
-            We deliver tangible business value through cost-effective solutions and measurable outcomes.
+            We deliver tangible business value through cost-effective solutions
+            and measurable outcomes.
           </p>
           <p className="mt-4">
-            <strong>Cost-Effective Solutions:</strong> Our efficient development processes and resource optimization help minimize costs while maintaining high quality standards.
+            <strong>Cost-Effective Solutions:</strong> Our efficient development
+            processes and resource optimization help minimize costs while
+            maintaining high quality standards.
           </p>
           <p className="mt-4">
             <strong>Measurable Impact:</strong> We focus on delivering:
@@ -152,8 +171,8 @@ export default function CompanyAboutSlider() {
             </ul>
           </p>
         </>
-      )
-    }
+      ),
+    },
   ];
 
   useEffect(() => {
@@ -167,7 +186,7 @@ export default function CompanyAboutSlider() {
       },
       {
         root: null,
-        rootMargin: '0px',
+        rootMargin: "0px",
         threshold: 0.5, // Adjust this value as needed
       }
     );
@@ -189,45 +208,43 @@ export default function CompanyAboutSlider() {
       id="about"
       className="flex flex-col md:justify-center md:items-center xl:justify-start py-10 px-5 w-full  scroll-mt-20 scroll-smooth min-h-[70vh]"
     >
-      <div className="container xl:max-w-6xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
-          Who We Are
-        </h2>
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* Left Section */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
-              Kodetrix is a forward-thinking technology firm, licensed to
-              deliver innovative IT solutions tailored to solve modern
-              challenges. We utilize the latest advancements in data analytics,
-              AI, machine learning, and IoT to create impactful solutions in
-              sectors such as Finance, Agriculture, Health, and more. Our
-              mission is to provide sustainable digital transformation for both
-              businesses and individuals.
-            </p>
-          </div>
+      <div className="flex flex-col md:flex-row gap-8 container xl:max-w-6xl mx-auto ">
+        {/* Left Section */}
+        <div className="w-full md:w-1/2 flex flex-col justify-start ">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
+            Who We Are
+          </h2>
+          <p className="mt-4 md:mt-6 lg:mt-8 text-sm sm:text-base text-center md:text-left md:text-lg xl:text-xl leading-relaxed">
+            Kodetrix is a forward-thinking technology firm, licensed to deliver
+            innovative IT solutions tailored to solve modern challenges. We
+            utilize the latest advancements in data analytics, AI, machine
+            learning, and IoT to create impactful solutions in sectors such as
+            Finance, Agriculture, Health, and more. Our mission is to provide
+            sustainable digital transformation for both businesses and
+            individuals.
+          </p>
+        </div>
 
-          {/* Right Section (Why Us) */}
-          <div className="w-full md:w-1/2 p-2 ">
-            <div className="w-full p-2 ">
-              <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
-                Why Us
-              </h2>
-            </div>  
-            <div className="border border-gray-300 rounded-lg p-2 dark:bg-black max-h-96 overflow-y-auto">
-              {items.map((item) => (
-                <AccordionItem
-                  key={item.key}
-                  isOpen={activeKey === item.key}
-                  onClick={() =>
-                    setActiveKey(activeKey === item.key ? null : item.key)
-                  }
-                  header={<Header {...item.header} />}
-                >
-                  {item.content}
-                </AccordionItem>
-              ))}
-            </div>
+        {/* Right Section (Why Us) */}
+        <div className="w-full md:w-1/2 ">
+          <div className="w-full">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
+              Why Us
+            </h2>
+          </div>
+          <div className="mt-4 md:mt-6 lg:mt-8 dark:bg-black max-h-96 overflow-y-auto">
+            {items.map((item) => (
+              <AccordionItem
+                key={item.key}
+                isOpen={activeKey === item.key}
+                onClick={() =>
+                  setActiveKey(activeKey === item.key ? null : item.key)
+                }
+                header={<Header {...item.header} />}
+              >
+                {item.content}
+              </AccordionItem>
+            ))}
           </div>
         </div>
       </div>
