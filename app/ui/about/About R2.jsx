@@ -226,13 +226,13 @@ export default function CompanyAboutSlider() {
         </div>
 
         {/* Right Section (Why Us) */}
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2">
           <div className="w-full">
             <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
               Why Us
             </h2>
           </div>
-          <div className="mt-4 md:mt-6 lg:mt-8 dark:bg-black max-h-96 overflow-y-auto">
+          <div className="mt-4 md:mt-6 lg:mt-8 dark:bg max-h-96 overflow-y-auto">
             {items.map((item) => (
               <AccordionItem
                 key={item.key}
