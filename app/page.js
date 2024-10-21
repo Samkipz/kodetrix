@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/app/ui/navbar/Navbar";
 import HeroSection from "./ui/hero/Hero";
-import Services from "./ui/services/Services";
+import Services from "./ui/services/Services R2";
 import About from "./ui/about/About R2";
 import Contact from "./ui/contact/Contact";
 import Footer from "./ui/footer/Footer";

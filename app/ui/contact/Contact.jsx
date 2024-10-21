@@ -76,7 +76,7 @@ export default function Contact() {
         </div>
 
         {/* Right Image Section */}
-        <div className="mt-8 md:mt-0 flex items-center justify-center md:justify-end w-full md:w-1/2 animate__animated animate__fadeInDown animate__delay-2s">
+        <div className="mt-8 md:mt-0 flex items-center justify-center md:justify-end w-full md:w-1/2 animate__animated animate__fadeInDown animate__delay-2s p-2">
           {/* Form */}
           <form>
             <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto md:-ml-2">
